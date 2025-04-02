@@ -1,0 +1,11 @@
+.container-short {
+	max-width: 540px;
+	margin: 0 auto;
+
+	@media (max-width: 768px) {
+		margin: 0 auto;
+		max-width: 100%;
+		padding: 0;
+		position: relative;
+	}
+}

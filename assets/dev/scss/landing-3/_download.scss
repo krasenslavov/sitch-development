@@ -1,0 +1,39 @@
+.download-container {
+	margin: 0 auto;
+	max-width: 360px;
+	padding: 120px 0;
+	text-align: center;
+
+	@media(max-width: 992px) {
+		padding: 60px 0 0 0;
+	}
+
+	h5 {
+		font-size: 27px;
+		font-style: italic;
+		line-height: 37px;
+		text-transform: uppercase;
+
+		span {
+			font-family: HelonikRegular, sans-serif;
+			font-size: 45px;
+			font-weight: 400;
+			text-transform: lowercase;
+
+			a {
+				color: $color-white;
+				font-family: SnellBTRegular, sans-serif;
+				text-decoration: none;
+				margin-top: 5px;
+				display: inline-block;
+				transition: all 600ms ease-in-out;
+
+				&:hover,
+				&:active,
+				&:focus {
+					font-weight: 700;
+				}
+			}
+		}
+	}
+}

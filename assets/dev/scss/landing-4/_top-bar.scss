@@ -1,0 +1,47 @@
+.top-bar {
+	overflow: hidden;
+	padding: 120px 0 20px 0;
+	width: 100%;
+	text-align: right;
+
+	@media(max-width: 992px) {
+		padding: 30px 0 20px 0;
+	}
+
+	.top-bar-inner {
+		animation: scrollTopBar 30s linear infinite;
+		display: inline-block;
+		overflow: hidden;
+		white-space: nowrap;
+	}
+
+	.sitch-pill {
+		background-color: lighten($color-black, 3%);
+		border: 1px solid lighten($color-black, 10%);
+		border-radius: 30px;
+		display: inline-block;
+		margin-left: 20px;
+		padding: 10px;
+	}
+}
+
+.top-bar + .top-bar {
+	padding: 0 0 40px 0;
+
+	@media(max-width: 992px) {
+		padding: 0 0 30px 0;
+	}
+
+	.top-bar-inner {
+		animation: scrollTopBar 15s linear infinite;
+	}
+}
+
+@keyframes scrollTopBar {
+	0% {
+		transform: translate3d(0, 0, 0);
+	}
+	100% {
+		transform: translate3d(-50%, 0 ,0);
+	}
+}

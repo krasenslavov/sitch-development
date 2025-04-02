@@ -1,0 +1,65 @@
+.testimonials {
+	display: flex;
+	gap: 20px;
+	justify-content: center;
+	margin: 0 auto;
+	max-width: 1440px;
+	padding: 0 40px;
+
+	@media (max-width: 768px) {
+		flex-wrap: nowrap;
+		justify-content: flex-start;
+	}
+
+	.testimony {
+		border: 1px solid rgba($color-dark-grey, 0.15);
+		border-bottom: 0;
+		border-radius: 20px;
+		flex: 0 0 25%;
+		padding: 25px;
+		position: relative;
+
+		@media (max-width: 768px) {
+			flex: 0 0 100%;
+		}
+
+		&:after {
+			background: $color-black;
+			bottom: 0;
+			content: '';
+			height: 25px;
+			left: 0;
+			position: absolute;
+			width: 100%;
+		}
+
+		h4 {
+			color: $color-white;
+			font-size: 28px;
+			line-height: 32px;
+			margin-bottom: 20px;
+			text-align: left;
+
+			@media (max-width: 768px) {
+				font-size: 20px;
+				line-height: 28px;
+			}
+		}
+
+		p {
+			font-family: PPMoriRegular, system-ui;
+			font-size: 16px;
+			margin-bottom: 0;	
+
+			span {
+				color: $color-dark-grey;
+				display: block;
+			}
+		}
+
+		&:nth-child(2n) {
+			position: relative;
+			top: 120px;
+		}
+	}
+}

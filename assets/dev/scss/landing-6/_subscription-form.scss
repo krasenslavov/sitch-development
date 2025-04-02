@@ -1,0 +1,157 @@
+input[type="checkbox"]#subscription-close-button {
+	display: none;
+}
+
+input#subscription-close-button:checked + .subscription-form-container {
+	display: none;
+}
+
+.subscription-form-container {
+	animation: slideBoxFromRight 600ms linear;
+	background: url(../img/landing-6/bg-3.webp) repeat;
+	border-bottom-left-radius: 30px;
+	border-top-left-radius: 30px;
+	bottom: 170px;
+	height: 280px;
+	padding: 30px 0 0 30px;
+	position: absolute;
+	right: 0;
+	width: 480px;
+	z-index: 100;
+
+	@media(max-width: 768px) {
+		animation: slideBoxFromBottom 600ms linear;
+		border-bottom-left-radius: 0;
+		border-top-right-radius: 30px;
+		bottom: 0;
+		padding: 15px 0 0 15px;
+		position: fixed;
+		right: auto;
+		width: 100%;
+	}
+
+	.subscription-close-button {
+		cursor: pointer;
+		position: absolute;
+		right: 15px;
+		top: 15px;
+	}
+
+	.subscription-form-inner {
+		background: url(../img/landing-6/card-img.webp) no-repeat right;
+		background-size: auto 100%;
+		padding-bottom: 50px;
+
+		@media(max-width: 768px) {
+			background-size: auto 80%;
+			padding-bottom: 70px;
+		}
+
+		h5, p, form {
+			max-width: 50%;
+
+			@media(max-width: 768px) {
+				max-width: 66%;
+			}
+		}
+	}
+
+	.subscription-form {
+		position: relative;
+
+		input[type="text"] {
+			background-color: $color-white;
+			border-radius: 30px;
+			color: $color-black;
+			font-size: 16px;
+			line-height: 1;
+			padding: 15px;
+			width: 100%;
+		}
+
+		input[type="text"]:focus + .subscription-form-send-button {
+			display: block;
+		}
+
+		.subscription-form-send-button {
+			cursor: pointer;
+			display: none;
+			position: absolute;
+			right: 15px;
+			top: 13px;
+		}
+
+		.subscription-form-success-button {
+			cursor: pointer;
+			display: none;
+			position: absolute;
+			right: 15px;
+			top: 13px;
+		}
+	}
+
+	nav {
+		background-color: $color-white;
+		border-bottom-left-radius: 30px;
+		border-top: 1px solid $color-black;
+		bottom: 0;
+		display: flex;
+		font-size: 12px;
+		gap: 15px;
+		left: 0;
+		overflow: hidden;
+		padding-top: 5px;
+		position: absolute;
+
+		@media(max-width: 768px) {
+			border-bottom-left-radius: 0;
+		}
+
+		a {
+			color: $color-black;
+			text-decoration: none;
+		}
+	}
+}
+
+@keyframes slideBoxFromRight {
+  0% {
+		right: -480px;
+	}
+	10% {
+		right: -432px;
+	}
+	30% {
+		right: -336px;
+	}
+	50% {
+		right: -240px;
+	}
+	70% {
+		right: -144px;
+	}
+	100% {
+		right: 0;
+	}
+}
+
+@keyframes slideBoxFromBottom {
+  0% {
+		bottom: -280px;
+	}
+	10% {
+		bottom: -252px;
+	}
+	30% {
+		bottom: -196px;
+	}
+	50% {
+		bottom: -140px;
+	}
+	70% {
+		bottom: -84px;
+	}
+	100% {
+		bottom: 0;
+	}
+}

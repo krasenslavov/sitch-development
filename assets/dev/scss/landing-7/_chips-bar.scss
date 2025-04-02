@@ -1,0 +1,56 @@
+.chips-bar-container {
+	position: absolute;
+	bottom: 165px;
+	left: 0;
+	width: 100%;
+
+	@media(max-width: 768px) {
+		bottom: 175px;
+	}
+}
+
+.chips-bar {
+	overflow: hidden;
+	padding: 0;
+	width: 100%;
+	text-align: right;
+
+	.chips-bar-inner {
+		animation: scrollChipsBar 60s linear infinite;
+		display: inline-block;
+		overflow: hidden;
+		white-space: nowrap;
+	}
+
+	.sitch-pill {
+		background-color: rgba(lighten($color-black, 3%), 0.95);
+		border: 1px solid lighten($color-black, 10%);
+		border-radius: 30px;
+		display: inline-block;
+		margin-left: 1px;
+		padding: 10px 15px;
+		font-size: 14px;
+		line-height: 20px;
+	}
+}
+
+.chips-bar + .chips-bar {
+	padding: 0 0 40px 0;
+
+	@media(max-width: 992px) {
+		padding: 0 0 30px 0;
+	}
+
+	.chips-bar-inner {
+		animation: scrollChipsBar 45s linear infinite;
+	}
+}
+
+@keyframes scrollChipsBar {
+	0% {
+		transform: translate3d(0, 0, 0);
+	}
+	100% {
+		transform: translate3d(-50%, 0 ,0);
+	}
+}

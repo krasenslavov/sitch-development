@@ -1,0 +1,47 @@
+.reviews-container {
+	overflow: hidden;
+
+	.reviews-container-inner {
+		animation: scrollReviews 60s forwards infinite;
+		display: inline-flex;
+		gap: 30px;
+		white-space: nowrap;
+	}
+
+	blockquote {
+		background-color: lighten($color-black, 3%);
+		border: 1px solid lighten($color-black, 10%);
+		border-radius: 30px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		margin: 0;
+		padding: 30px;
+		white-space: wrap;
+		width: 480px;
+
+		p {
+			font-family: MinisterLightRegular, system-ui;
+			font-size: 18px;
+			line-height: 28px;
+			margin-bottom: 20px;
+		}
+
+		cite {
+			display: block;
+			font-size: 18px;
+			font-weight: 700;
+			text-align: right;
+			text-transform: uppercase;
+		}
+	}
+}
+
+@keyframes scrollReviews {
+	0% {
+		transform: translate3d(0, 0, 0);
+	}
+	100% {
+		transform: translate3d(-2000px, 0, 0);
+	}
+}

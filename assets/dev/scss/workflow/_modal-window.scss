@@ -1,0 +1,73 @@
+.modal-window-sitch {
+	animation: fadeInModal 400ms ease-in-out;
+	background: $color-neutral-5;
+	border: 1px solid rgba($color-neutral-1, 0.1);
+	border-radius: 30px;
+	bottom: -10px;
+	color: $color-neutral-1;
+	display: none;
+	padding: 40px 20px 20px 20px;
+	position: absolute;
+	text-align: center;
+	margin: 0 10px;
+	max-width: calc(540px - 20px);
+
+	&.modal-window-lets-go {
+		display: block;
+	}
+
+	.modal-close-button {
+		cursor: pointer;
+		height: 30px;
+		position: absolute;
+		right: 20px;
+		top: 20px;
+		width: 30px;
+	}
+
+	.modal-button {
+		background-color: $color-primary-2;
+		border-radius: 60px;
+		color: $color-neutral-1; 
+		display: block;
+		font-size: 20px;
+		padding: 20px;
+		text-decoration: none;
+		transition: background-color 400ms ease-in-out;
+
+		&:hover,
+		&:active,
+		&:focus {
+			background-color: $color-primary-3;
+		}
+	}
+
+	h4 {
+		font-size: 28px;
+		margin: 20px 0;
+	}
+
+	p {
+		font-size: 18px;
+		line-height: 28px;
+		margin: 0 auto 20px auto;
+		max-width: 66%;
+
+		@media(max-width: 992px) {
+			max-width: 90%;
+		}
+	}
+}
+
+.modal-blur-divs {
+	filter: blur(8px);
+}
+
+@keyframes fadeInModal {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}

@@ -1,0 +1,16 @@
+@import '../../../node_modules/bootstrap/scss/bootstrap.scss';
+
+@import './landing-7/base/global';
+@import './landing-7/base/variables';
+@import './landing-7/base/fonts';
+@import './landing-7/base/colors';
+
+@import './landing-7/container';
+@import './landing-7/header';
+@import './landing-7/subscription-form';
+@import './landing-7/reviews';
+@import './landing-7/steps';
+@import './landing-7/cta';
+@import './landing-7/chips-bar';
+@import './landing-7/ticker-bar';
+@import './landing-7/footer';

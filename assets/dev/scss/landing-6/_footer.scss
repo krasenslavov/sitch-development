@@ -1,0 +1,44 @@
+footer {
+
+	.footer-bottom {
+		max-width: 600px;
+		margin: 0 auto;
+	}
+
+	h5 {
+		font-size: 20px;
+		line-height: 24px;
+		font-family: PPMoriRegular, system-ui;
+		font-weight: 500;
+		margin-bottom: 30px;
+	}
+
+	nav {
+		margin: 40px 0 20px 0;
+
+		svg {
+			margin: 0 10px;
+		}
+	}
+
+	p {
+		color: rgba($color-white, 50%);
+		font-size: 16px;
+	}
+
+	p small,
+	p a {
+		color: rgba($color-white, 25%);
+	}
+
+	a {
+		text-decoration: none;
+		transition: all 400ms ease-in-out;
+
+		&:hover,
+		&:active,
+		&:focus {
+			color: $color-white;
+		}
+	}
+}

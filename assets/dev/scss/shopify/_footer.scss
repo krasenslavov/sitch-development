@@ -1,0 +1,54 @@
+footer {
+	padding: 40px 0;
+
+	.footer-bottom {
+		margin: 0 auto;
+		max-width: 600px;
+	}
+
+	h5 {
+		font-size: 30px;
+		font-weight: 500;
+		line-height: 40px;
+		margin-bottom: 30px;
+	}
+
+	nav {
+		margin: 40px 0 20px 0;
+
+		svg {
+			margin: 0 10px;
+		}
+	}
+
+	p {
+		color: rgba($color-white, 50%);
+		font-size: 16px;
+	}
+
+	h5 a {
+		color: $color-white;
+		
+		&:hover,
+		&:active,
+		&:focus {
+			color: rgba($color-white, 25%);
+		}
+	}
+
+	p small,
+	p a {
+		color: rgba($color-white, 25%);
+	}
+
+	a {
+		text-decoration: none;
+		transition: all 400ms ease-in-out;
+
+		&:hover,
+		&:active,
+		&:focus {
+			color: $color-white;
+		}
+	}
+}

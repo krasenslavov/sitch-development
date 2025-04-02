@@ -1,0 +1,51 @@
+.logos {
+	height: 140px;
+	position: relative;
+	width: 100%;
+	
+	&:before,
+	&:after {
+		content: "";
+		height: 140px;
+		pointer-events: none;
+		position: absolute;
+		top: 0;
+		width: 140px;
+		z-index: 1;
+
+		@media (max-width: 768px) {
+			width: 50px;
+		}
+	}
+
+	&:before {
+		background: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+		left: -20px;
+	}
+	
+	&:after {
+		background: linear-gradient(to left, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+		right: -20px;
+	}
+	
+	.logos-inner {
+		display: flex;
+		flex-wrap: nowrap;
+		gap: 80px;
+		overflow-x: none;
+
+		img {
+			animation: slide-left 100s linear infinite;
+			height: 140px;
+		}
+	}
+}
+
+@keyframes slide-left {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}

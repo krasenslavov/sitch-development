@@ -1,0 +1,32 @@
+section.home {
+	padding: 120px 0;
+	
+	@media (max-width: 768px) {
+		padding: 60px 0;
+	}
+
+	h2 {
+		font-size: 56px;
+		line-height: 60px;
+		margin-bottom: 120px;
+		text-align: center;
+
+		@media (max-width: 768px) {
+			font-size: 40px;
+			line-height: 48px;
+			margin-bottom: 60px;
+		}
+
+		span {
+			color: $color-dark-grey;
+			display: block;
+			font-size: 32px;
+			line-height: 36px;
+
+			@media (max-width: 768px) {
+				font-size: 26px;
+				line-height: 34px;
+			}
+		}
+	}
+}

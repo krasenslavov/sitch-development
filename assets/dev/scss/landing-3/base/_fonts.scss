@@ -1,0 +1,41 @@
+@font-face {
+	font-display: swap;
+	font-family: 'HelonikRegular';
+	font-style: 'normal';
+	font-weight: 400;
+	src: url('../fonts/HelonikRegular.woff2') format('woff2');
+}
+
+@font-face {
+	font-display: swap;
+	font-family: 'HelonikBoldItalic';
+	font-style: 'normal';
+	font-weight: 700;
+	src: url('../fonts/HelonikBoldItalic.woff2') format('woff2');
+}
+
+@font-face {
+	font-display: swap;
+	font-family: 'MinisterLightRegular';
+	font-style: 'normal';
+	font-weight: 300;
+	src: url('../fonts/MinisterLightRegular.woff2') format('woff2');
+}
+
+@font-face {
+	font-display: swap;
+	font-family: 'SnellBTRegular';
+	font-style: 'normal';
+	font-weight: 400;
+	src: url('../fonts/SnellBTRegular.woff2') format('woff2');
+}
+
+body, input, button, textarea {
+	font-family: HelonikRegular, system-ui;
+	font-size: 16px;
+	line-height: 24px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: HelonikBoldItalic, system-ui;
+}

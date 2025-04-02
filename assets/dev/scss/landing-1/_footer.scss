@@ -1,0 +1,29 @@
+footer {
+	text-align: center;
+	color: $color-white;
+	padding: 60px 0;
+
+	a {
+		color: $color-white;
+		text-decoration: none;
+		transition: all 200ms ease-in-out;
+
+		&:hover,
+		&:focus,
+		&:active {
+			color: $color-pink;
+		}
+	}
+
+	p {
+		line-height: 28px;
+		margin-bottom: 0;
+	}
+
+	nav {
+		display: flex;
+		gap: 20px;
+		justify-content: center;
+		margin-bottom: 20px;
+	}
+}

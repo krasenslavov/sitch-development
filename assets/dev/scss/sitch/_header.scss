@@ -1,0 +1,64 @@
+header {
+	&.home,
+	&.landing,
+	&.communities,
+	&.payment {
+		position: relative;
+
+		&:before {
+			background-image: url(../img/sitch/bg-1.webp);
+			background-position: center 60%;
+			background-repeat: no-repeat;
+			background-size: cover;
+			bottom: 0;
+			content: '';
+			left: 0;
+			position: absolute;
+			right: 0;
+			top: 0;
+			z-index: -1;
+	
+			@media(max-width: 768px) {
+				background-image: url(../img/sitch/bg-1-mobile.webp);
+			}
+		}
+	}
+}
+
+header.home {
+	> div {
+		background: linear-gradient(0deg, $color-black 0%, rgba($color-black, 0.25) 25%, rgba($color-black, 0) 100%);
+		min-height: 960px;
+
+		@media(max-width: 768px) {
+			min-height: 640px;
+		}
+	}
+}
+
+header.landing {
+	&:before {
+		background-position: center 50%;
+	}
+
+	> div {
+		background: linear-gradient(0deg, $color-black 0%, rgba($color-black, 0.25) 25%, rgba($color-black, 0) 100%);
+	}
+}
+
+header.communities {
+	> div {
+		background: linear-gradient(0deg, $color-black 0%, rgba($color-black, 0.25) 25%, rgba($color-black, 0) 100%);
+		min-height: 920px;
+
+		@media(max-width: 768px) {
+			min-height: 720px;
+		}
+	}
+}
+
+header.payment {
+	> div {
+		background: linear-gradient(0deg, $color-black 0%, rgba($color-black, 0.25) 25%, rgba($color-black, 0) 100%);
+	}
+}

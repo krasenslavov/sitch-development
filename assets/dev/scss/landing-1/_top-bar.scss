@@ -1,0 +1,43 @@
+.top-bar {
+	background-color: $color-pink;
+	margin: 120px 0;
+	overflow: hidden;
+	padding: 20px 0;
+	width: 100%;
+
+	@media(max-width: 992px) {
+		margin: 40px 0;
+		padding: 10px 0;
+	}
+
+	.top-bar-inner {
+		animation: scrollTopBar 10s linear infinite;
+		display: inline-block;
+		overflow: hidden;
+		white-space: nowrap;
+	}
+
+	.top-bar-item {
+		color: $color-white;
+		display: inline-block;
+		font-size: 20px;
+		line-height: 20px;
+		padding: 10px 10px 0 10px;
+		text-transform: uppercase;
+
+		span {
+			padding: 0;
+			margin: 0;
+			display: inline-block;
+		}
+	}
+}
+
+@keyframes scrollTopBar {
+	0% {
+		transform: translate3d(0, 0, 0);
+	}
+	100% {
+		transform: translate3d(-50%, 0, 0);
+	}
+}

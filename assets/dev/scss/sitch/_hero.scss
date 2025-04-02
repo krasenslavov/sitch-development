@@ -1,0 +1,277 @@
+.hero {
+	margin: 0 auto;
+	max-width: 1440px;
+	padding: 30px 0;
+
+	h1,
+	h2 {
+		br {
+			@media(max-width: 768px) {
+				display: none;
+			}
+		}
+	}
+
+	h1 {
+		font-family: SeriouslyNostalgicRegular, system-ui;
+		font-size: 96px;
+		line-height: 100px;
+
+		@media(max-width: 768px) {
+			font-size: 50px;
+			line-height: 58px;
+		}
+		
+		&.home {
+			margin-bottom: 40px;
+		}
+	}
+
+	h2 {
+		font-size: 70px;
+		line-height: 80px;
+		
+		@media(max-width: 768px) {
+			font-size: 50px;
+			line-height: 58px;
+		}
+	}
+
+	h3 {
+		font-size: 56px;
+		line-height: 62px;
+
+		@media(max-width: 768px) {
+			font-size: 32px;
+			line-height: 40px;
+		}
+	}
+
+	.download-button {
+		img {
+			height: 80px;
+
+			@media(max-width: 768px) {
+				height: 48px;
+			}
+		}
+	}
+
+	.apply-now-button {
+		background: linear-gradient(90deg, $color-gradient-a 0%, $color-gradient-b 100%);
+		border-radius: 12px;
+		color: $color-white;
+		display: inline-block;
+		font-size: 28px;
+		line-height: 36px;
+		margin: 0 0 180px 0;
+		padding: 25px 75px;
+		text-decoration: none;
+
+		@media(max-width: 768px) {
+			font-size: 16px;
+			line-height: 24px;
+			margin: 0 0 90px 0;
+			padding: 15px 45px;
+		}
+
+		&:hover,
+		&:active,
+		&:focus {
+			background: linear-gradient(90deg, $color-gradient-b 0%, $color-gradient-a 100%);
+		}
+	}
+}
+
+.hero-home {
+	h1 {
+		margin-bottom: 40px;
+	}
+
+	h3 {
+		margin-top: 180px;
+
+		@media(max-width: 768px) {
+			margin-bottom: 10px;
+			margin-top: 40px;
+		}
+	}
+
+	h4 {
+		font-size: 40px;
+		height: 57px;
+		line-height: 80px;
+		text-wrap: nowrap;
+	}
+
+	.featured-in {
+		align-items: center;
+		display: flex;
+		gap: 40px;
+		justify-content: center;
+		margin: 80px 0 160px 0;
+
+		@media(max-width: 768px) {
+			display: block;
+			gap: 0;
+			margin: 40px 0 80px 0;
+		}
+
+		h4 {
+			@media(max-width: 768px) {
+				display: block;
+				text-align: center;
+				width: 100%;
+			}
+		}
+
+		div {
+			@media(max-width: 768px) {
+				display: inline-block;
+				width: 32%;
+			}
+
+			&:last-of-type {
+				&:after {
+					border: 0;
+					margin: 0;
+				}
+			}
+
+			&:after {
+				border-right: 1px solid $color-white;
+				content: " ";
+				font-size: 40px;
+				line-height: 80px;
+				margin-left: 40px;
+				position: relative;
+				top: 5px;
+
+				@media(max-width: 768px) {
+					margin-left: 15px;
+				}
+			}
+		}
+
+		img {
+			height: 65px;
+
+			@media(max-width: 768px) {
+				height: 35px;
+			}	
+		}
+	}
+}
+
+.hero-payment {
+	h3 {
+		margin-top: 160px;
+
+		@media(max-width: 768px) {
+			margin-bottom: 10px;
+			margin-top: 40px;
+		}
+	}
+
+	h4 {
+		margin-top: 10px !important;
+
+    span {
+			font-size: 14px !important;
+			line-height: 24px !important;
+		}
+	}
+
+	.payment-nav {
+		margin: 20px auto 40px auto !important;
+    margin: 0 auto;
+    max-width: 400px;
+    padding: 0;
+
+		li {
+			align-items: flex-start;
+			display: flex;
+			font-family: SeriouslyNostalgicFnRegular, system-ui;
+			font-size: 24px;
+			gap: 5px;
+			list-style-type: none;
+			margin: 10px 0;
+
+			svg {
+				flex: 0 0 40px;
+			}
+		}
+	}
+}
+
+.hero-communities {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: 0 auto;
+	max-width: 1024px;
+	min-height: 820px;
+	padding: 30px 0;
+
+	@media(max-width: 768px) {
+		min-height: 620px;
+	}
+
+	h1 {
+		font-family: SeriouslyNostalgicRegular, system-ui;
+		font-size: 80px;
+		line-height: 88px;
+
+		@media(max-width: 768px) {
+			font-size: 50px;
+			line-height: 58px;
+		}
+	}
+
+	p {
+		font-size: 18px;
+		line-height: 26px;
+	}
+
+	strong {
+		font-size: 20px;
+		font-weight: 500;
+		line-height: 28px;
+	}
+}
+
+.hero-landing {
+	.invite-code {
+    background-color: rgba(0, 0, 0, 0.35);
+    border-radius: 24px;
+    font-size: 30px;
+    margin: 40px auto 0 auto;
+    max-width: 680px;
+    padding: 30px 60px;
+	}
+	
+	.landing-steps {
+		margin: 180px 0;
+
+		@media(max-width: 768px) {
+			margin: 90px 45px;
+		}
+
+		.landing-steps-desktop {
+			display: block;
+
+			@media(max-width: 768px) {
+				display: none;
+			}
+		}
+
+		.landing-steps-mobile {
+			display: none;
+
+			@media(max-width: 768px) {
+				display: block;
+			}
+		}
+	}
+}

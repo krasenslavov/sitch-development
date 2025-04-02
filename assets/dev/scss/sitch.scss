@@ -1,0 +1,35 @@
+@import '../../../node_modules/bootstrap/scss/bootstrap.scss';
+
+// Base
+@import './sitch/base/global';
+@import './sitch/base/variables';
+@import './sitch/base/fonts';
+@import './sitch/base/colors';
+@import './sitch/base/utility';
+
+// Global
+@import './sitch/container';
+@import './sitch/navbar';
+@import './sitch/header';
+@import './sitch/hero';
+@import './sitch/main';
+@import './sitch/home';
+@import './sitch/footer';
+
+// Home
+@import './sitch/get-advice';
+@import './sitch/how-it-happens';
+
+// Home New
+@import './sitch/home-steps';
+@import './sitch/logos';
+@import './sitch/testimonials';
+
+// Pages
+@import './sitch/communities';
+@import './sitch/faqs';
+@import './sitch/how-it-works';
+@import './sitch/why-sitch';
+
+// Payment
+@import './sitch/payment-membership-tier';

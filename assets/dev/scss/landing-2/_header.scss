@@ -1,0 +1,128 @@
+header {
+	padding: 60px 0;
+
+	@media(max-width: 992px) {
+		padding: 0;
+	}
+
+	.cover-image {
+		height: 640px;
+		margin: 0 auto 60px auto;
+		max-width: 1140px;
+
+		@media(max-width: 992px) {
+			height: 480px;
+			margin: 0;
+		}
+
+		.cover-image-left {
+			// background: url(../img/landing-2/cover-image-left.webp) no-repeat left center;
+			height: 100%;
+
+			@media(max-width: 992px) {
+				background: transparent;
+			}
+		}
+
+		.cover-image-right {
+			align-items: center;
+			background: url(../img/landing-2/cover-image-new.webp) no-repeat right center;
+			display: flex;
+			height: 100%;
+			justify-content: center;
+
+			@media(max-width: 992px) {
+				background-position: center right -250px;
+				justify-content: flex-start;
+			}
+		}
+
+		h1 {
+			font-family: JandusRoadCondensed, system-ui;
+			font-size: 60px;
+			font-style: italic;
+			line-height: 70px;
+			margin: 0 auto;
+			max-width: 480px;
+			padding-top: 80px;
+			text-transform: uppercase;
+
+			@media(max-width: 992px) {
+				font-size: 40px;
+				line-height: 50px;
+				margin: 0;
+				max-width: 320px;
+				padding: 0;
+			}
+
+			span {
+				display: block;
+				font-size: 80px;
+				line-height: 90px;
+
+				@media(max-width: 992px) {
+					font-size: 60px;
+					line-height: 70px;
+				}
+			}
+
+			strong {
+				font-weight: 400;
+			}
+		}
+	}
+
+	h2 {
+		color: $color-white;
+		font-size: 36px;
+		line-height: 46px;
+		margin: 30px auto;
+		max-width: 480px;
+		text-transform: uppercase;
+
+		@media(max-width: 992px) {
+			font-size: 30px;
+			line-height: 40px;
+			margin-top: 90px;
+			text-align: center;
+		}
+	}
+
+	p {
+		font-size: 20px;
+		line-height: 30px;
+		margin: 0 auto;
+		max-width: 480px;
+
+		@media(max-width: 992px) {
+			margin: 0;
+			max-width: 320px;
+		}
+	}
+
+	.subscription-form {
+		margin: 0 auto;
+		max-width: 480px;
+		position: relative;
+
+		input[type="text"] {
+			background-color: $color-white;
+			border-radius: 30px;
+			font-weight: 400;
+			padding: 15px 30px;
+			width: 100%;
+		}
+
+		button[type="submit"] {
+			background-color: $color-lime;
+			border: 0;
+			border-radius: 30px;
+			cursor: pointer;
+			height: 40px;
+			position: absolute;
+			right: 10px;
+			top: 8px;
+			width: 80px;
+		}
+	}
+}

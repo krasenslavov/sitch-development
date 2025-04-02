@@ -1,0 +1,111 @@
+body.how-it-works {
+	background: $color-black url(../img/sitch/bg-2.webp) no-repeat top left;
+	background-size: cover;
+}
+
+.singles-list {
+	background: url(../img/sitch/singles-list-bg.webp) no-repeat top center;
+	background-size: 100% auto;
+	margin-top: 60px;
+}
+
+section.how-it-works {
+	margin: 60px auto;
+	max-width: 680px;
+
+	h1 {
+		margin-bottom: 80px;
+
+		@media (max-width: 768px) {
+			margin-bottom: 60px;
+		}
+	}
+
+	h2 {
+		font-size: 48px;
+		line-height: 56px;
+		margin-bottom: 40px;
+		position: relative;
+
+		@media (max-width: 768px) {
+			font-size: 36px;
+			line-height: 44px;
+			margin-bottom: 20px;
+			padding-left: 50px;
+		}
+
+		strong {
+			font-size: 48px;
+			font-weight: 400;
+			line-height: 56px;
+
+			@media (max-width: 768px) {
+				font-size: 36px;
+				line-height: 44px;
+			}
+		}
+
+		span {
+			background: $color-black-alt;
+			border-radius: 50%;
+			display: inline-block;
+			font-family: PPMoriRegular, system-ui;
+			font-size: 20px;
+			height: 70px;
+			left: -55px;
+			line-height: 70px;
+			position: absolute;
+			text-align: center;
+			top: -35px;
+			width: 70px;
+			z-index: -1;
+
+			@media (max-width: 768px) {
+				font-size: 16px;
+				height: 40px;
+				left: 0;
+				line-height: 40px;
+				top: 0;
+				width: 40px;
+			}
+		}
+	}
+
+	h3 {
+		font-size: 40px;
+		line-height: 48px;
+		margin-bottom: 40px;
+
+		@media(max-width: 768px) {
+			font-size: 28px;
+			line-height: 36px;
+		}
+	}
+	
+	p {
+		color: rgba($color-white, 0.45);
+		font-size: 16px;
+		line-height: 24px;
+		margin-bottom: 20px;
+
+		@media (max-width: 768px) {
+			font-size: 14px;
+			line-height: 22px;
+			padding: 0 20px;
+		}
+	}
+
+	.how-it-works-step {
+		margin: 40px 0;
+
+		img {
+			margin: 0 auto;
+			max-width: 460px;
+
+			@media (max-width: 768px) {
+				max-width: 100%;
+				width: 100%;
+			}
+		}
+	}
+}

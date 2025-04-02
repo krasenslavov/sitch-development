@@ -1,0 +1,16 @@
+@import '../../../node_modules/bootstrap/scss/bootstrap.scss';
+
+@import './shopify/base/global';
+@import './shopify/base/variables';
+@import './shopify/base/fonts';
+@import './shopify/base/colors';
+
+@import './shopify/container';
+@import './shopify/header';
+@import './shopify/main';
+@import './shopify/footer';
+@import './shopify/custom-elements';
+
+@import './shopify/how-it-happens';
+@import './shopify/frequenty-asked-question';
+@import './shopify/membership-form';

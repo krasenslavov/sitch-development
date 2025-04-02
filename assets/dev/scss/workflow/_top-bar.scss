@@ -1,0 +1,31 @@
+.top-bar {
+	background-color: rgba($color-primary-2, 0.4);
+	overflow: hidden;
+	padding: 10px 0;
+	width: 100%;
+	text-align: right;
+
+	.top-bar-inner {
+		animation: scrollTopBar 30s linear infinite;
+		display: inline-block;
+		overflow: hidden;
+		white-space: nowrap;
+	}
+
+	.top-bar-item {
+		color: $color-neutral-1;
+		display: inline-block;
+		font-size: 14px;
+		line-height: 24px;
+		margin: 0 10px;
+	}
+}
+
+@keyframes scrollTopBar {
+	0% {
+		transform: translate3d(0, 0, 0);
+	}
+	100% {
+		transform: translate3d(-50%, 0 ,0);
+	}
+}

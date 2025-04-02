@@ -1,0 +1,134 @@
+nav {
+	&.navbar {
+		align-items: center;
+		display: flex;
+		justify-content: space-between;
+		margin: 0 auto;
+		max-width: 1440px;
+		padding: 40px 0 0 0;
+	}
+
+	.navbar-collapse {
+		flex-grow: 0;
+	}
+
+	.navbar-brand {
+		@media(max-width: 768px) {
+			left: 20px;
+			margin: 0 auto;
+			position: relative;
+		}
+
+		&.navbar-brand-sitch {
+			img {
+				height: 48px;
+	
+				@media(max-width: 768px) {
+					height: 36px;
+				}
+			}
+		}
+	}
+
+	.navbar-toggler {
+		background-color: rgba($color-white, 0.85);
+		border-color: transparent;
+		margin-right: 15px;
+		padding: 0px;
+
+		&:focus,
+		&:hover,
+		&:active {
+			box-shadow: none;
+			outline: 2px solid rgba($color-white, 0.65);
+		}
+
+		.navbar-toggler-icon {
+			background-size: 55%;
+		}
+	}
+
+	.navbar-nav {
+		align-items: center;
+		gap: 0;
+		position: relative;
+		top: 3px;
+
+		@media(max-width: 768px) {
+			background-color: rgba($color-black, 0.45);
+			border: 1px solid rgba($color-white, 0.03);
+			border-radius: 6px;
+			margin-top: 10px;
+			padding: 10px;
+			text-align: center;
+		}
+
+		.nav-item {
+			border: 1px solid transparent;
+			font-family: 'SeriouslyNostalgicFnRegular', system-ui;
+			font-size: 28px;
+			line-height: 32px;
+			margin-left: 60px;
+
+			@media(max-width: 768px) {
+				font-size: 24px;
+				line-height: 34px;
+				margin: 5px 0;
+				width: 100%;
+
+				&:last-of-type {
+					display: block !important;
+				}
+
+				&:hover,
+				&:active {
+					background-color: rgba($color-white, 0.15);
+					border-radius: 6px;
+				}
+			}
+
+			&:last-of-type {
+				display: none;
+			}
+		}
+
+		.nav-link {
+			color: $color-white;
+			padding: 0;
+
+			&.nav-link-nominate {
+				display: none;
+
+				@media(max-width: 768px) {
+					display: block;
+					padding: 5px;
+				}
+			}
+		}
+	}
+
+	.nav-link-nominate {
+		border-image: linear-gradient(to right, $color-gradient-a 0%, $color-gradient-b 100%) 1; 
+		border-style: solid;
+		border-width: 2px;
+		color: $color-white;
+		display: block;
+		font-family: 'SeriouslyNostalgicFnRegular', system-ui;
+		font-size: 20px; 
+		line-height: 24px;
+		padding: 15px;
+		text-decoration: none;
+
+		@media(max-width: 768px) {
+			display: none;
+			font-size: 24px;
+			line-height: 34px;
+		}
+
+		&:hover,
+		&:active,
+		&:focus {
+			background: linear-gradient(to right, $color-gradient-a 0%, $color-gradient-b 100%); 
+		}
+	}
+}

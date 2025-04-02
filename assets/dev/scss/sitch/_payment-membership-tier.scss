@@ -1,0 +1,116 @@
+.payment-membership-tier {
+	margin: 40px 0 160px 0;
+
+	.membership-tier-button {
+		background-color: $color-primary-1;
+		border: 0;
+		border-radius: 24px;
+		color: $color-white;
+		display: inline-block;
+		font-size: 14px;
+		line-height: 22px;
+		margin-top: 40px;
+		min-width: 260px;
+		padding: 10px;
+	}
+
+	.membership-tier-body {
+		display: flex;
+		gap: 40px;
+		justify-content: center;
+	
+		@media(max-width: 768px) {
+			flex-direction: column;
+		}
+	
+		input[name="membership-tier"] {
+			display: none;
+		}
+	
+		input[name="membership-tier"]:checked {
+			+ .membership-tier-inner {
+				&:before {
+					background: linear-gradient(to right, $color-gradient-a 0%, $color-gradient-b 100%);
+					border: 1px solid transparent;
+					border-radius: inherit;
+					bottom: -1px;
+					content: '';
+					left: -1px;
+					pointer-events: none;
+					position: absolute;
+					right: -1px;
+					top: -1px;
+					z-index: -1;
+				}
+			}
+		}
+	
+		.membership-type {
+			align-items: center;
+			display: flex;
+			justify-content: space-between;
+			margin-bottom: 0;
+		}
+	
+		.membership-tier {
+			flex: 0 0 33%;
+	
+			.membership-tier-inner {
+				background-color: rgba($color-black, 0.75);
+				border-radius: 12px;
+				cursor: pointer;
+				height: 100%; 
+				padding: 20px;
+				position: relative;
+				width: 100%;
+			}
+	
+			> p {
+				font-size: 12px;
+				line-height: 20px;
+				margin-bottom: 0;
+			}
+	
+			h4,
+			ul {
+				font-family: SeriouslyNostalgicFnRegular, system-ui;
+			}
+	
+			h4 {
+				align-items: center;
+				display: flex;
+				font-size: 32px;
+				justify-content: space-between;
+				margin-top: 0;
+				position: relative;
+	
+				span {
+					color: $color-white;
+					font-family: PPMoriRegular, system-ui;
+					font-size: 12px;
+				}
+			}
+	
+			ul {
+				list-style-type: none;
+				margin: 0;
+				padding: 0;
+	
+				li {
+					align-items: start;
+					display: flex;
+					margin: 6px 0;
+					padding-left: 35px;
+					position: relative;
+	
+					svg {
+						left: 0;
+						margin-right: 6px;
+						position: absolute;
+					}
+				}
+			}
+		}
+	}
+}
+

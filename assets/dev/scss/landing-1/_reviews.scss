@@ -1,0 +1,142 @@
+main {
+	h2 {
+		font-family: SnellBTRegular, system-ui;
+		font-size: 60px;
+		line-height: 70px;
+		text-align: center;
+
+		@media(max-width: 992px) {
+			font-size: 40px;
+			line-height: 50px;
+		}
+	}
+
+	.reviews-container {
+		padding: 40px 0 180px 0;
+
+		@media(max-width: 992px) {
+			padding: 20px 0;
+		}
+
+		.reviews-container-inner {
+			flex-wrap: wrap;
+			gap: 5px;
+
+			@media(max-width: 992px) {
+				align-items: center;	
+				flex-direction: column;
+				// flex-wrap: nowrap;
+				overflow: hidden;
+			}
+		}
+
+		blockquote {
+			border: 3px solid $color-white;
+			border-radius: 30px;
+			display: flex;
+			flex: 0 0 40%;
+			flex-direction: column;
+			font-family: VelinoCompressedTextMedium, system-ui;
+			justify-content: space-between;
+			margin: 30px;
+			padding: 40px;
+			position: relative;
+			z-index: 1;
+
+			@media(max-width: 1200px) {
+				padding: 20px;
+			}
+
+			@media(max-width: 992px) {
+				// animation: scrollReviews 60s forwards infinite;
+				// flex: 0 0 360px;
+				// padding: 40px;
+				margin: 30px 0 30px 30px;
+				width: 90%;
+			}
+
+			&:nth-child(1),
+			&:nth-child(4),
+			&:nth-child(5) {
+				border: 3px dashed $color-white;
+			}
+			
+
+			&:nth-child(2n) {
+				position: relative;
+				top: 60px;
+
+				@media(max-width: 992px) {
+					margin: 30px 30px 30px 0;
+					top: auto;
+				}
+			}
+
+			&:nth-child(3),
+			&:nth-child(4) {
+				left: 60px;
+				position: relative;
+
+				@media(max-width: 992px) {
+					left: auto;
+				}
+			}
+
+			&:nth-child(1):before {
+				background: url(../img/landing-1/hearts-icon.webp) no-repeat;
+				background-size: 80px 60px;
+				bottom: -45px;
+				content: "";
+				height: 80px;
+				position: absolute;
+				right: 45%;
+				width: 80px;
+				z-index: 1;
+			}
+
+			&:nth-child(3):before {
+				background: url(../img/landing-1/head-icon.webp) no-repeat;
+				background-size: auto 180px;
+				bottom: -80px;
+				content: "";
+				height: 180px;
+				position: absolute;
+				right: -80px;
+				width: 180px;
+				z-index: 1;
+			}
+
+			&:nth-child(6):before {
+				background: url(../img/landing-1/hearts-icon-2.webp) no-repeat;
+				background-size: auto 80px;
+				bottom: 45%;
+				content: "";
+				height: 80px;
+				position: absolute;
+				right: -105px;
+				width: 160px;
+				z-index: 1;
+			}
+
+			p {
+				font-size: 22px;
+				line-height: 32px;
+				margin: 0 0 20px 0;
+			}
+	
+			cite {
+				font-size: 24px;
+				font-style: normal;
+			}
+		}
+	}
+}
+
+@keyframes scrollReviews {
+	0% {
+		transform: translate3d(0, 0, 0);
+	}
+	100% {
+		transform: translate3d(-2000px, 0, 0);
+	}
+}

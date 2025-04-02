@@ -1,0 +1,107 @@
+header {
+	.navbar-brand {
+		font-family: VelinoCompressedTextMedium, system-ui;
+		font-size: 60px;
+		padding: 120px 0;
+		text-align: center;
+		text-transform: uppercase;
+
+		@media(max-width: 992px) {
+			padding: 55px 0;
+		}
+	}
+
+	h1 {
+		font-size: 50px;
+		line-height: 60px;
+		margin: 0 0 80px 0;
+
+		@media(max-width: 992px) {
+			font-size: 26px;
+			line-height: 36px;
+			margin: 40px 0 0 0;
+		}
+	}
+
+	.cover {
+		@media(max-width: 992px) {
+			.order-first {
+				order: 1 !important;
+			}
+	
+			.order-last {
+				order: 0 !important;
+			}
+		}
+
+		.cover-img {
+			max-width: 100%;
+	
+			@media(max-width: 992px) {
+				margin-bottom: 40px;
+			}
+		}
+
+		.col-12 {
+			display: flex;
+			flex-direction: column;
+		}
+	}
+
+	.subscription-form {
+		position: relative;
+		width: 80%;
+
+		@media(max-width: 992px) {
+			width: 100%;
+		}
+
+		input {
+			min-width: 100%;
+		}
+
+		span {
+			background-color: $color-pink;
+			border-radius: 30px;
+			color: $color-white;
+			left: 5px;
+			padding: 12px 20px;
+			position: absolute;
+			top: 5px;
+
+			@media(max-width: 992px) {
+				display: block;
+				font-size: 20px;
+				margin-bottom: 5px;
+				position: static;
+				text-align: center;
+				width: 100%;
+			}
+		}
+
+		input[type="text"] {
+			background-color: $color-white;
+			border-radius: 30px;
+			font-weight: 400;
+			padding: 15px 30px 15px 160px;
+			width: calc(100% - 190px);
+
+			@media(max-width: 992px) {
+				padding: 15px;
+				text-align: left;
+			}
+		}
+
+		button[type="submit"] {
+			background-color: $color-pink;
+			border: 0;
+			border-radius: 30px;
+			bottom: 9px;
+			cursor: pointer;
+			padding: 8px 0;
+			position: absolute;
+			right: 9px;
+			width: 80px;
+		}
+	}
+}

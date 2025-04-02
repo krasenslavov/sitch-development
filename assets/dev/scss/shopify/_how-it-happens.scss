@@ -1,0 +1,71 @@
+.hih-container {
+	margin: 180px 0 120px 0;
+
+	@media(max-width: 768px) {
+		margin: 90px 0 60px 0;
+	}
+
+	h2 {
+		font-size: 50px;
+		line-height: 60px;
+		margin-bottom: 20px;
+
+		@media(max-width: 768px) {
+			font-size: 40px;
+			line-height: 40px;
+			margin-bottom: 10px;
+		}
+	}
+
+	h3 {
+		font-family: PPMoriRegular, system-ui;
+		font-size: 20px;
+		line-height: 30px;
+		margin-bottom: 40px;
+	}
+
+	h4 {
+		font-size: 36px;
+		line-height: 40px;
+		text-align: center;
+
+		@media(max-width: 768px) {
+			font-size: 20px;
+			line-height: 30px;
+		}
+	}
+
+	.hih-container-inner {
+		margin: 0 auto;
+		max-width: 860px;
+		position: relative;
+		z-index: 1;
+
+		@media(max-width: 768px) {
+			padding: 0 20px;
+		}
+
+		h4 {
+			font-size: 36px;
+			line-height: 42px;
+			padding: 40px;
+		}
+
+		.hih-thumb-inside {
+			align-items: center;
+			display: flex;
+			height: 100%;
+			justify-content: center;
+			left: 0;
+			position: absolute;
+			top: 0;
+			width: 100%;
+	
+		}
+	
+		.hih-thumb {
+			margin-bottom: 25px;
+			position: relative;
+		}
+	}
+}

@@ -1,0 +1,27 @@
+main {
+	@media(max-width: 768px) {
+		padding: 0 15px;
+	}
+
+	h1 {
+		font-size: 56px;
+		line-height: 60px;
+
+		@media (max-width: 768px) {
+			font-size: 40px;
+			line-height: 48px;
+		}
+	}
+
+	a {
+		color: $color-primary-1;
+		text-decoration: none;
+		transition: color 400ms ease-in-out;
+
+		&:hover,
+		&:active,
+		&:focus {
+			color: $color-white;
+		}
+	}
+}

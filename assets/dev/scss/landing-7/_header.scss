@@ -1,0 +1,98 @@
+header {
+	background: url(../img/landing-7/bg-1.webp) no-repeat top center;
+	background-size: cover;
+	padding: 40px 0 0 0;
+	position: relative;
+
+	> div {
+		background: url(../img/landing-7/bottom-shadow.webp) repeat-x bottom left;
+	}
+
+	.brand-description {
+		margin: 0 auto;
+		max-width: 600px;
+		padding: 40px 0;
+
+		h1 {
+			font-size: 60px;
+			line-height: 70px;
+			margin-bottom: 10px;
+
+			@media(max-width: 768px) {
+				font-size: 40px;
+				line-height: 50px;
+			}
+		}
+
+		p {
+			font-size: 30px;
+			line-height: 40px;
+			margin-bottom: 0;
+
+			@media(max-width: 768px) {
+				font-size: 20px;
+				line-height: 30px;
+			}
+		}
+	}
+
+	.whats-the-sitch {
+		background: $color-black;
+		border-top-left-radius: 30px;
+		border-top-right-radius: 30px;
+		margin: 80px auto 0 auto;
+		max-width: 360px;
+		padding: 20px;
+		position: relative;		
+
+		@media(max-width: 768px) {
+			margin: 60px auto 0 auto;
+			padding: 20px;
+		}
+
+		h2 {
+			font-size: 40px;
+			line-height: 50px;
+			margin: 20px 0;
+
+			@media(max-width: 768px) {
+				font-size: 30px;
+				line-height: 40px;
+			}
+		}
+
+		.ask-send-form {
+			position: relative;
+
+			input[type="text"] {
+				background-color: $color-white;
+				border-radius: 30px;
+				color: $color-black;
+				font-size: 16px;
+				line-height: 1;
+				padding: 15px 15px 15px 45px;
+				width: 100%;
+			}
+
+			.send-form-attach-button {
+				cursor: pointer;
+				left: 18px;
+				position: absolute;
+				top: 12px;
+			}
+
+			.send-form-button {
+				cursor: pointer;
+				position: absolute;
+				right: 10px;
+				top: 12px;
+			}
+		}
+
+		.sample-profile {
+			margin: 120px 0 0 0;
+			position: relative;
+			z-index: 0;
+		}
+	}
+}

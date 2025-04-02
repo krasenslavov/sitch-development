@@ -1,0 +1,34 @@
+@font-face {
+	font-display: swap;
+	font-family: 'JandusRoad';
+	font-style: 'normal';
+	font-weight: 400;
+	src: url('../fonts/JandusRoad.woff2') format('woff2');
+}
+
+@font-face {
+	font-display: swap;
+	font-family: 'VelinoCompressedTextMedium';
+	font-style: 'normal';
+	font-weight: 400;
+	src: url('../fonts/VelinoCompressedTextMedium.woff2') format('woff2');
+}
+
+@font-face {
+	font-display: swap;
+	font-family: 'SnellBTRegular';
+	font-style: 'normal';
+	font-weight: 400;
+	src: url('../fonts/SnellBTRegular.woff2') format('woff2');
+}
+
+body, input, button, textarea {
+	font-family: JandusRoad, system-ui;
+	font-size: 16px;
+	line-height: 24px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: VelinoCompressedTextMedium, system-ui;
+	font-weight: 400;
+}

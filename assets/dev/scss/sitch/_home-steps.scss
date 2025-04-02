@@ -1,0 +1,136 @@
+.home-steps-outer {
+	background: url(../img/sitch/home-steps-bg.webp) no-repeat left 200px;
+	background-size: 1440px 2500px;
+	margin: auto;
+	max-width: 1440px;
+
+	@media(max-width: 768px) {
+		background: url(../img/sitch/home-steps-mobile-bg.webp) no-repeat left 200px;
+		background-size: 100% auto;
+	}
+}
+
+.home-steps {
+	.home-step {
+		&:nth-child(1) {
+			h3 {
+				margin-top: 0px;
+
+				@media (max-width: 768px) {
+					margin-top: 80px;
+				}
+			}
+		}
+
+		&:nth-child(2) {
+			h3 {
+				margin-top: 320px;
+
+				@media (max-width: 768px) {
+					margin-top: 80px;
+				}
+			}
+		}
+
+		&:nth-child(3) {
+			h3 {
+				margin-top: 230px;
+
+				@media (max-width: 768px) {
+					margin-top: 80px;
+				}
+			}
+		}
+
+		&:nth-child(4) {
+			h3 {
+				margin-top: 80px;
+			}
+		}
+
+		h3 {
+			font-size: 48px;
+			line-height: 56px;
+			margin-bottom: 40px;
+			text-align: left;
+
+			@media (max-width: 768px) {
+				font-size: 36px;
+				line-height: 44px;
+				margin-bottom: 20px;
+				padding-left: 50px;
+			}
+		}
+	}
+
+	.home-step {
+		max-width: 640px;
+		position: relative;
+
+		&-1 {
+			margin-left: 25%;
+
+			@media (max-width: 768px) {
+				margin-left: 0;
+			}
+		}
+
+		&-2 {
+			margin-left: 40%;
+			@media (max-width: 768px) {
+				margin-left: 0;
+			}
+		}
+
+		&-3 {
+			margin-left: 60%;
+			max-width: 480px;
+
+			@media (max-width: 768px) {
+				margin-left: 0;
+				max-width: 100%;
+			}
+		}
+
+		&-4 {
+			margin-left: 80%;
+
+			@media (max-width: 768px) {
+				margin-left: 0;
+			}
+		}
+
+		h3 {
+			strong {
+				font-weight: 400;
+				position: relative;
+				z-index: 1;
+			}
+			
+			span {
+				background: $color-black-alt;
+				border-radius: 50%;
+				display: inline-block;
+				font-family: PPMoriRegular, system-ui;
+				font-size: 20px;
+				height: 70px;
+				left: -55px;
+				line-height: 70px;
+				position: absolute;
+				text-align: center;
+				top: -35px;
+				width: 70px;
+				z-index: 0;
+
+				@media (max-width: 768px) {
+					font-size: 16px;
+					height: 40px;
+					left: 0;
+					line-height: 40px;
+					top: 0;
+					width: 40px;
+				}
+			}
+		}
+	}
+}

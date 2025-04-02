@@ -1,0 +1,23 @@
+.sitch-blurb-container {
+	background: rgba($color-neutral-5, 0.8);
+	border: 1px solid rgba($color-neutral-1, 0.1);
+	border-radius: 30px;
+	padding: 20px;
+	position: relative;
+	margin: 0 20px 20px 20px;
+
+	.sitch-blurb-says {
+		color: $color-primary-1;
+		gap: 10px;
+		left: -20px;
+		position: absolute;
+		top: 10px;
+	}
+
+	.sitch-blurb-text {
+		color: $color-neutral-1;
+		font-size: 18px;
+		line-height: 28px;
+		padding: 35px 25px 0 35px;
+	}
+}

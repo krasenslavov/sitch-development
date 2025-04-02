@@ -1,0 +1,16 @@
+.sitch-background {
+	background: $color-primary-3 url(../img/workflow/sitch-background.webp) repeat top left;
+	margin: 0;
+	padding: 0;
+}
+
+.lets-go-page {
+	[class^=poll-] {
+		filter: blur(8px);
+	}
+
+	.modal-window-lets-go {
+		bottom: 10px;
+		position: fixed;
+	}
+}

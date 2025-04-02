@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Sitch - Landing 9</title>
+	<link href="../assets/dist/css/landing-9.css" rel="stylesheet" />
+</head>
+
+<body>
+	<header>
+		<div class="container-fluid">
+			<div class="navbar-brand text-center">
+				<a href="/">
+					<img src="../assets/dist/img/landing-9/sitch-logo.webp" alt="Sitch logo" />
+				</a>
+			</div>
+
+			<div class="brand-description">
+				<div class="container">
+					<h2 class="text-center">
+						Tired of dating apps and the endless swiping?&nbsp;Conversations that go nowhere?&nbsp;<br />
+						Trying to meet randos at bars?&nbsp;Too many options, but none of them are right?
+					</h2>
+
+					<h1 class="text-center text-uppercase">
+						SITCH SETS YOU UP.
+					</h1>
+
+					<p class="text-center">
+						<em>
+							The dating concierge for New York's finest.
+						</em>
+					</p>
+				</div>
+			</div>
+
+			<div class="referrer-container text-center">
+				<h2>
+					Since Chad referred you,<br /> you can skip the waitlist!
+				</h2>
+
+				<p>
+					Make sure you use this code when you download Sitch and apply for priority review.
+				</p>
+
+				<form class="referrer-form">
+					<input type="text" placeholder="" value="DINIM" id="myReferrerCode" />
+					<button onclick="copyToClipboard()">
+						<svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M22.1666 24.5H9.33331V8.16666H22.1666M22.1666 5.83332H9.33331C8.71448 5.83332 8.12098 6.07916 7.6834 6.51674C7.24581 6.95433 6.99998 7.54782 6.99998 8.16666V24.5C6.99998 25.1188 7.24581 25.7123 7.6834 26.1499C8.12098 26.5875 8.71448 26.8333 9.33331 26.8333H22.1666C22.7855 26.8333 23.379 26.5875 23.8166 26.1499C24.2541 25.7123 24.5 25.1188 24.5 24.5V8.16666C24.5 7.54782 24.2541 6.95433 23.8166 6.51674C23.379 6.07916 22.7855 5.83332 22.1666 5.83332ZM18.6666 1.16666H4.66665C4.04781 1.16666 3.45432 1.41249 3.01673 1.85007C2.57915 2.28766 2.33331 2.88115 2.33331 3.49999V19.8333H4.66665V3.49999H18.6666V1.16666Z"
+								fill="white" />
+						</svg>
+					</button>
+				</form>
+
+				<a href="https://apps.apple.com/us/app/sitch-dating-911/id6478976426" target="_blank"
+					class="download-now-button">
+					Download now
+				</a>
+			</div>
+		</div>
+	</header>
+
+	<script>
+		function copyToClipboard() {
+			var copyText = document.getElementById('myReferrerCode');
+			copyText.select();
+			copyText.setSelectionRange(0, 99999);
+			navigator.clipboard.writeText(copyText.value);
+			alert('Referrer code text was copied to clipboard!');
+		}
+	</script>
+</body>
+
+</html>

@@ -1,0 +1,16 @@
+.frequenty-asked-question {
+	border-bottom: 1px solid rgba($color-white, 0.05);
+	color: rgba($color-white, 0.5);
+	margin: 0 auto;
+	max-width: 680px;
+
+	@media(max-width: 768px) {
+		padding: 0 20px;
+	}
+
+	span {
+		color: $color-white;
+		display: block;
+		margin-bottom: 10px;
+	}
+}

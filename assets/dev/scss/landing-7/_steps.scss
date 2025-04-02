@@ -1,0 +1,115 @@
+.steps-container {
+	margin: 0 0 160px 0;
+
+	@media(max-width: 768px) {
+		margin: 0;
+	}
+
+	h2 {
+		font-size: 50px;
+		line-height: 60px;
+		margin-bottom: 20px;
+
+		@media(max-width: 768px) {
+			font-size: 40px;
+			line-height: 40px;
+			margin: 0 20px 10px 20px;
+			text-align: left;
+		}
+
+		span {
+			font-family: PPMoriRegular, system-ui;
+			font-size: 26px;
+			position: relative;
+			top: -4px;
+		}
+	}
+
+	h3 {
+		font-family: PPMoriRegular, system-ui;
+		font-size: 20px;
+		line-height: 30px;
+		margin-bottom: 20px;
+
+		@media(max-width: 768px) {
+			margin: 0 20px 20px 20px;
+			text-align: left;
+		}
+	}
+
+	.steps-outer-container {
+		padding: 80px 0;
+
+		@media(max-width: 768px) {
+			padding: 0;
+		}
+	}
+
+	.steps-outer-container-stripes {
+		background: url(../img/landing-7/steps-stripes-bg.webp) no-repeat top left;
+		background-size: cover;
+	}
+
+	.steps-inner-container {
+		align-items: center;
+		display: flex;
+		gap: 40px;
+		justify-content: center;
+		margin: 0 auto;
+		max-width: 960px;
+
+		@media(max-width: 768px) {
+			flex-direction: column;
+			gap: 0;
+			min-height: 100vh;
+			padding: 0 20px;
+		} 
+
+		img {
+			max-width: 100%;
+		}
+
+		.steps-static,
+		.steps-content {
+			flex: 0 0 50%;
+
+			@media(max-width: 768px) {
+				flex: 0 0 100%;
+			}
+		}
+
+		.steps-static {
+			order: 1;
+
+			@media(max-width: 768px) {
+				order: 2;
+			}
+		}
+		
+		.steps-content {
+			order: 2;
+
+			@media(max-width: 768px) {
+				order: 1;
+			}
+		}
+	}
+
+	.steps-inner-container-reverse {
+		.steps-static {
+			order: 2;
+
+			@media(max-width: 768px) {
+				order: 2;
+			}
+		}
+		
+		.steps-content {
+			order: 1;
+
+			@media(max-width: 768px) {
+				order: 1;
+			}
+		}
+	}
+}

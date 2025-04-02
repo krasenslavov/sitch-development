@@ -1,0 +1,25 @@
+@font-face {
+	font-display: swap;
+	font-family: 'BricolageGrotesque';
+	font-style: 'normal';
+	font-weight: 400;
+	src: url('../fonts/BricolageGrotesque.woff2') format('woff2');
+}
+
+@font-face {
+	font-display: swap;
+	font-family: 'WixMadeforText';
+	font-style: 'normal';
+	font-weight: 400;
+	src: url('../fonts/WixMadeforText.woff2') format('woff2');
+}
+
+body, input, button, textarea {
+	font-family: WixMadeforText, system-ui;
+	font-size: 16px;
+	line-height: 24px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: BricolageGrotesque, system-ui;
+}

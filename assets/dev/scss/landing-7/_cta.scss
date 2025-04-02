@@ -1,0 +1,44 @@
+.cta-container {
+	margin: 0 0 180px 0;
+
+	@media(max-width: 768px) {
+		margin: 0;
+	}
+
+	h2 {
+		font-size: 50px;
+		line-height: 60px;
+		margin-bottom: 20px;
+
+		@media(max-width: 768px) {
+			font-size: 40px;
+			line-height: 40px;
+			margin-bottom: 10px;
+		}
+	}
+
+	h3 {
+		font-family: PPMoriRegular, system-ui;
+		font-size: 20px;
+		line-height: 30px;
+		margin-bottom: 40px;
+
+		@media(max-width: 768px) {
+			margin-bottom: 20px;
+		}
+	}
+
+	.cta-container-inner {
+		max-width: 1280px;
+		margin: 0 auto;
+		padding: 60px;
+		background: linear-gradient(360deg, #1A45D9 0%, #11145C 100%);
+		border-radius: 40px;
+
+		@media(max-width: 768px) {
+			padding: 40px 20px;
+			border-radius: 0;
+		}
+	}
+
+}

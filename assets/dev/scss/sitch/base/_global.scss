@@ -1,0 +1,25 @@
+html {
+	@media (max-width: 768px) {
+		overflow-x: hidden;
+	}
+}
+
+em {
+	margin: 0 7px 0 0;
+}
+
+.img-desktop {
+	display: block;
+
+	@media (max-width: 768px) {
+		display: none;
+	}
+}
+
+.img-mobile {
+	display: none;
+
+	@media (max-width: 768px) {
+		display: block;
+	}
+}
