@@ -38,6 +38,22 @@
 	src: url('../fonts/SeriouslyNostalgicFn-Regular.woff2') format('woff2');
 }
 
+@font-face {
+	font-display: swap;
+	font-family: 'BelmonteBallpointCursive';
+	font-style: 'normal';
+	font-weight: 400;
+	src: url('../fonts/BelmonteBallpointCursive.woff2') format('woff2');
+}
+
+@font-face {
+	font-display: swap;
+	font-family: 'Temeraire';
+	font-style: 'normal';
+	font-weight: 400;
+	src: url('../fonts/Temeraire.woff2') format('woff2');
+}
+
 body, input, button, textarea {
 	font-family: PPMoriRegular, system-ui;
 	font-size: 18px;

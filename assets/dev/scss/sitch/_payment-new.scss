@@ -1,0 +1,404 @@
+body.why-sitch-new {
+	.hero-payment {
+		h3 {
+			margin-top: 0;
+		}
+
+		h4 {
+			font-family: 'PPMoriRegular', system-ui;
+			font-size: 20px;
+			line-height: 28px;
+
+			+ h4 {
+				font-family: 'SeriouslyNostalgicRegular', system-ui;
+				font-size: 24px;
+				line-height: 32px;
+
+				em {
+					font-family: 'BelmonteBallpointCursive', system-ui;
+					font-size: 40px;
+					line-height: 32px;
+				}
+			}
+		}
+	}
+}
+
+header {
+	&.payment-new {
+		padding: 0;
+		position: relative;
+
+		&:before {
+			background-image: url(../img/sitch/payment-new-bg.webp);
+			background-position: center 60%;
+			background-repeat: no-repeat;
+			background-size: cover;
+			bottom: 0;
+			content: '';
+			left: 0;
+			position: absolute;
+			right: 0;
+			top: 0;
+			z-index: -1;
+		}
+	}
+}
+
+.why-sitch-top-outer {
+	background: $color-black;
+
+	.why-sitch {
+		margin-bottom: 0;
+		margin-top: 0;
+		padding-top: 20px;
+	}
+
+	h2 {
+		em {
+			display: block;
+			font-family: 'Temeraire';
+			font-size: 44px;
+			line-height: 52px;
+		}
+	}
+
+	p {
+		color: #9e9e9e;
+		font-size: 14px;
+		
+		&:last-of-type {
+			margin: 0 auto;
+			max-width: 320px;
+			padding: 40px 0;
+		}
+
+		
+
+		span {
+			color: $color-white;
+			display: block;
+			font-size: 16px;
+			line-height: 20px;
+			margin: 40px auto 5px auto;
+			max-width: 320px;
+			position: relative;
+			text-transform: uppercase;
+
+			&:nth-child(1n) {
+				img {
+					left: -18px;
+					top: -24px;
+				}
+			}
+
+			img {
+				height: 32px;
+				position: absolute;
+				z-index: 0;
+			}
+		}
+
+		&:nth-of-type(2) {
+			img {
+				left: auto !important;
+				right: 0px;
+			}
+		}
+
+		&:nth-of-type(3) {
+			img {
+				height: 52px;
+				left: 0 !important;
+				top: -42px !important;
+			}
+		}
+	}
+}
+
+.group-chat-outer {
+	padding: 0;
+
+	.group-chat {
+		background-image: url(../img/sitch/group-chat-bg.webp);
+		background-position: top left;
+		background-repeat: repeat;
+	}
+
+	.group-chat-heading {
+		background: $color-black;
+		padding: 40px;
+
+		h2 {
+			font-size: 56px;
+			line-height: 60px;
+			margin: 0 auto;
+			max-width: 640px;
+
+			@media (max-width: 768px) {
+				font-size: 32px;
+				line-height: 36px;
+				max-width: 320px;
+			}
+
+			em {
+				font-family: 'BelmonteBallpointCursive', system-ui;
+				font-size: 72px;
+				line-height: 36px;
+
+				@media (max-width: 768px) {
+					font-size: 52px;
+				}
+			}
+
+			span {
+				font-family: 'Temeraire', system-ui;
+				font-size: 64px;
+				line-height: 52px;
+				text-decoration: underline;
+
+				@media (max-width: 768px) {
+					font-size: 44px;
+				}
+			}
+		}
+	}
+
+	.group-chat-img {
+		margin: 0 auto;
+		max-width: 640px;
+		padding: 40px 20px;
+	}
+}
+
+.why-sitch-outer {
+	padding: 0;
+	position: relative;
+
+	&:before {
+		background-image: url(../img/sitch/payment-new-bg.webp);
+		background-position: center 60%;
+		background-repeat: no-repeat;
+		background-size: cover;
+		bottom: 0;
+		content: '';
+		left: 0;
+		position: absolute;
+		right: 0;
+		top: 0;
+		z-index: -1;
+	}
+
+	.why-sitch {
+		margin: 0 auto !important;
+		padding: 60px 0 140px 0;
+
+		h2 {
+			font-family: 'Temeraire';
+			font-size: 44px;
+			line-height: 52px;
+			margin: 0 0 60px 0;
+
+			@media (max-width: 768px) {
+				font-size: 32px;
+				line-height: 36px;
+			}
+		}
+
+		.card-group {
+			margin: 0;
+
+			.ws-card {
+				p {
+					&:last-of-type {
+						margin-bottom: 0;
+					}
+				}
+
+				&:first-child {
+					transform: rotate(-7deg);
+
+					@media (max-width: 768px) {
+						left: 0;
+						transform: rotate(-5deg);
+					}
+				}
+
+				&:last-child {
+					transform: rotate(7deg);
+
+					@media (max-width: 768px) {
+						left: 0;
+						transform: rotate(5deg);
+					}
+				}
+				
+				img {
+					margin-bottom: 0;
+					max-width: 75px;
+				}
+			}
+		}
+	}
+
+	.ws-card {
+		background: rgba(0, 0, 0, 0.3);
+		border: 0;
+	}
+}
+
+.custom-text-new {
+	background: linear-gradient(90deg, #F3E48A 0%, #84C5FF 100%);
+	background-clip: text;	
+	font-size: 12px;
+	-webkit-text-fill-color: transparent;
+}
+
+.activate-button-new {
+	align-items: center;
+	background-image: url(../img/sitch/activate-membership-btn.webp);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 360px 78px;
+	color: $color-black;
+	display: flex;
+	font-family: 'SeriouslyNostalgicFnRegular', system-ui;
+	font-size: 22px;
+	font-style: italic;
+	height: 78px;
+	justify-content: center;
+	letter-spacing: 2px;
+	margin: 0 auto;
+	text-transform: uppercase;
+	width: 360px;
+
+	&:hover {
+		color: $color-black-alt;
+	}
+}
+
+section.faqs-new {
+	.accordion-header:has(~ .show) {
+		border-top: 2px solid rgba($color-white, 0.05);
+	
+		button {
+			background: transparent;
+	
+			&:after {
+				background: transparent;
+				content: '-';
+				font-size: 32px;
+			}
+		}
+	}
+}
+
+.payment-membership-tier-new {
+	margin: 40px 0;
+
+	.membership-tier-body {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+		justify-content: center;
+		margin: 0 auto;
+		max-width: 360px;
+	
+		input[name="membership-tier"] {
+			display: none;
+		}
+	
+		input[name="membership-tier"]:checked {
+			+ .membership-tier-inner {
+				&:before {
+					background: linear-gradient(to right, #F3E48A 0%, #84C5FF 100%);
+					border: 1px solid transparent;
+					border-radius: inherit;
+					bottom: -1px;
+					content: '';
+					left: -1px;
+					pointer-events: none;
+					position: absolute;
+					right: -1px;
+					top: -1px;
+					z-index: -1;
+				}
+			}
+		}
+	
+		.membership-tier {
+			flex: 0 0 33%;
+	
+			.membership-tier-inner {
+				background-color: rgba($color-black, 0.75);
+				border-radius: 12px;
+				cursor: pointer;
+				height: 100%; 
+				padding: 20px;
+				position: relative;
+				width: 100%;
+			}
+	
+			> p {
+				font-size: 12px;
+				line-height: 20px;
+				margin-bottom: 0;
+			}
+	
+			h4,
+			ul {
+				font-family: SeriouslyNostalgicFnRegular, system-ui;
+			}
+	
+			h4 {
+				align-items: center;
+				display: flex;
+				font-size: 32px;
+				justify-content: space-between;
+				line-height: 26px;
+				margin: 0;
+				position: relative;
+
+				em {
+					position: relative;
+					top: -10px;
+
+					em {
+						font-family: 'Temeraire', system-ui;
+						font-size: 18px;
+						top: 0;
+					}
+				}
+	
+				span {
+					color: $color-white;
+					display: block;
+					font-family: PPMoriRegular, system-ui;
+					font-size: 12px;
+					margin-bottom: 8px;
+					text-align: right;
+				}
+			}
+	
+			ul {
+				list-style-type: none;
+				margin: 0;
+				padding: 0;
+	
+				li {
+					align-items: start;
+					display: flex;
+					margin: 6px 0;
+					padding-left: 35px;
+					position: relative;
+	
+					svg {
+						left: 0;
+						margin-right: 6px;
+						position: absolute;
+					}
+				}
+			}
+		}
+	}
+}
