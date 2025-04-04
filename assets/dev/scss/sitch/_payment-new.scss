@@ -1,23 +1,42 @@
 body.why-sitch-new {
 	.hero-payment {
 		h3 {
+			font-family: PPMoriRegular, system-ui;
+			font-size: 32px;
+			line-height: 36px;
 			margin-top: 0;
-		}
-
-		h4 {
-			font-family: 'PPMoriRegular', system-ui;
-			font-size: 20px;
-			line-height: 28px;
+			text-transform: uppercase;
 
 			+ h4 {
-				font-family: 'SeriouslyNostalgicRegular', system-ui;
+				font-family: SeriouslyNostalgicRegular, system-ui;
 				font-size: 24px;
 				line-height: 32px;
 
 				em {
-					font-family: 'BelmonteBallpointCursive', system-ui;
+					font-family: BelmonteBallpointCursive, system-ui;
 					font-size: 40px;
 					line-height: 32px;
+				}
+			}
+		}
+
+		h4 {
+			font-size: 24px;
+			line-height: 28px;
+		}
+
+		.payment-nav {
+			max-width: 340px;
+
+			li {
+				font-family: PPMoriRegular, system-ui;
+				font-size: 16px;
+				line-height: 22px;
+
+				svg {
+					flex: 0 0 20px;
+					position: relative;
+					top: -5px;
 				}
 			}
 		}
@@ -57,7 +76,7 @@ header {
 	h2 {
 		em {
 			display: block;
-			font-family: 'Temeraire';
+			font-family: Temeraire;
 			font-size: 44px;
 			line-height: 52px;
 		}
@@ -142,7 +161,7 @@ header {
 			}
 
 			em {
-				font-family: 'BelmonteBallpointCursive', system-ui;
+				font-family: BelmonteBallpointCursive, system-ui;
 				font-size: 72px;
 				line-height: 36px;
 
@@ -152,10 +171,9 @@ header {
 			}
 
 			span {
-				font-family: 'Temeraire', system-ui;
+				font-family: Temeraire, system-ui;
 				font-size: 64px;
 				line-height: 52px;
-				text-decoration: underline;
 
 				@media (max-width: 768px) {
 					font-size: 44px;
@@ -166,7 +184,7 @@ header {
 
 	.group-chat-img {
 		margin: 0 auto;
-		max-width: 640px;
+		max-width: 540px;
 		padding: 40px 20px;
 	}
 }
@@ -191,17 +209,14 @@ header {
 
 	.why-sitch {
 		margin: 0 auto !important;
-		padding: 60px 0 140px 0;
+		padding: 0 0 140px 0;
 
-		h2 {
-			font-family: 'Temeraire';
-			font-size: 44px;
-			line-height: 52px;
-			margin: 0 0 60px 0;
+		.group-chat-heading {
+			background-color: transparent;
+			padding: 40px 40px 80px 40px;
 
 			@media (max-width: 768px) {
-				font-size: 32px;
-				line-height: 36px;
+				padding-bottom: 40px;
 			}
 		}
 
@@ -209,6 +224,9 @@ header {
 			margin: 0;
 
 			.ws-card {
+				padding: 30px;
+				position: relative;
+				
 				p {
 					&:last-of-type {
 						margin-bottom: 0;
@@ -222,6 +240,12 @@ header {
 						left: 0;
 						transform: rotate(-5deg);
 					}
+
+					img {
+						bottom: -40px;
+						left: -25px;
+						position: absolute;
+					}
 				}
 
 				&:last-child {
@@ -230,6 +254,12 @@ header {
 					@media (max-width: 768px) {
 						left: 0;
 						transform: rotate(5deg);
+					}
+
+					img {
+						position: absolute;
+						right: -25px;
+						top: -40px;
 					}
 				}
 				
@@ -262,7 +292,7 @@ header {
 	background-size: 360px 78px;
 	color: $color-black;
 	display: flex;
-	font-family: 'SeriouslyNostalgicFnRegular', system-ui;
+	font-family: SeriouslyNostalgicFnRegular, system-ui;
 	font-size: 22px;
 	font-style: italic;
 	height: 78px;
@@ -364,7 +394,7 @@ section.faqs-new {
 					top: -10px;
 
 					em {
-						font-family: 'Temeraire', system-ui;
+						font-family: Temeraire, system-ui;
 						font-size: 18px;
 						top: 0;
 					}
