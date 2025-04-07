@@ -1,0 +1,14 @@
+@import '../../../node_modules/bootstrap/scss/bootstrap.scss';
+
+// Base
+@import './sitch-updated/base/variables';
+@import './sitch-updated/base/fonts';
+@import './sitch-updated/base/global';
+@import './sitch-updated/base/utility';
+
+// Sections
+@import './sitch-updated/faqs';
+@import './sitch-updated/how-it-works';
+@import './sitch-updated/nominate-form';
+@import './sitch-updated/payment';
+@import './sitch-updated/why-sitch';

@@ -1,0 +1,110 @@
+::-webkit-input-placeholder { 
+	color: $color-white;
+}
+
+:-moz-placeholder {
+	color: $color-white;
+ 	opacity:  1;
+}
+
+::-moz-placeholder {
+ 	color: $color-white;
+	opacity:  1;
+}
+
+:-ms-input-placeholder {
+	color: $color-white;
+}
+
+::-ms-input-placeholder {
+	color: $color-white;
+}
+
+::placeholder {
+	color: $color-white;
+}
+
+html {
+	@media (max-width: 768px) {
+		overflow-x: hidden;
+	}
+}
+
+body {
+	background: $color-black;
+
+	&.bg-striped {
+		background: $color-black url(../img/sitch-updated/bg-striped.webp) repeat top left;
+	}
+}
+
+a {
+	color: $color-primary-1;
+	text-decoration: none;
+	transition: color 400ms ease-in-out;
+
+	&:hover,
+	&:active,
+	&:focus {
+		color: $color-white;
+	}
+}
+
+h1 {
+	color: $color-white;
+	font-size: 56px;
+	line-height: 64px;
+
+	@media (max-width: 768px) {
+		font-size: 44px;
+		line-height: 52px;
+	}
+
+	.text-larger {
+		font-size: 96px;
+		line-height: 104px;
+
+		@media (max-width: 768px) {
+			font-size: 56px;
+			line-height: 64px;
+		}
+	}
+}
+
+h2 {
+	color: $color-white;
+	font-size: 48px;
+	line-height: 56px;
+
+	@media (max-width: 768px) {
+		font-size: 36px;
+		line-height: 44px;
+	}
+}
+
+p {
+	color: rgba($color-white, 0.45);
+	font-size: 16px;
+	line-height: 24px;
+
+	@media (max-width: 768px) {
+		font-size: 14px;
+		line-height: 22px;
+	}
+}
+
+.img-desktop {
+	display: block;
+
+	@media (max-width: 768px) {
+		display: none;
+	}
+}
+
+.img-mobile {
+	display: none;
+
+	@media (max-width: 768px) {
+		display: block;
+	}
+}
