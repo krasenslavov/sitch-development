@@ -1,0 +1,84 @@
+footer {
+	background: url(../img/sitch-updated/bg-footer.png) no-repeat top center;
+	background-size: cover;
+	margin-top: 3rem;
+	padding-bottom: 65%;
+	position: relative;
+
+	.footer-logo {
+		color: $color-white;
+		font-family: SeriouslyNostalgicFnRegular, system-ui;
+		font-size: 148px;
+		letter-spacing: 1%;
+		line-height: 154px;
+		text-decoration: none;
+
+		@media(max-width: 768px) {
+			font-size: 72px;
+			line-height: 72px;
+		}
+
+		&:hover,
+		&:active,
+		&:focus {
+			color: rgba($color-white, 0.75);
+		}
+	}
+
+	.footer-shape {
+		svg {
+			bottom: 0;
+			height: 100%;
+			left: 0;
+			overflow: visible;
+			position: absolute;
+			right: 0;
+			width: 100%;
+			z-index: 0;
+		}
+		
+		text {
+			fill: $color-white;
+			font-size: 14.3%;
+		}
+	}
+
+	.footer-content {
+		align-items: center;
+		display: flex;
+		height: 100%;
+		justify-content: center;
+		position: absolute;
+		top: 0;
+		width: 100%;
+		z-index: 1;
+
+		nav {
+			align-items: center;
+			display: flex;
+			gap: 40px;
+			justify-content: center;
+			margin: 40px 0;
+
+			@media(max-width: 768px) {
+				margin: 10px 0;
+			}
+		}
+	
+		p {
+			color: rgba($color-white, 0.35);
+			font-size: 16px;
+			line-height: 24px;
+
+			a {
+				color: rgba($color-white, 0.35);
+		
+				&:hover,
+				&:active,
+				&:focus {
+					color: $color-white;
+				}
+			}
+		}
+	}
+}

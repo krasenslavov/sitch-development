@@ -1,0 +1,478 @@
+header {
+	&.payment {
+		padding: 0;
+		position: relative;
+
+		&:before {
+			background-image: url(../img/sitch-updated/bg-payment-clouds.webp);
+			background-position: center 60%;
+			background-repeat: no-repeat;
+			background-size: cover;
+			bottom: 0;
+			content: '';
+			left: 0;
+			position: absolute;
+			right: 0;
+			top: 0;
+			z-index: -1;
+		}
+	}
+
+	.hero {
+		&__payment {
+			h3 {
+				color: $color-white;
+				font-family: PPMoriRegular, system-ui;
+				font-size: 32px;
+				line-height: 36px;
+				margin-top: 0;
+				text-transform: uppercase;
+	
+				+ h4 {
+					font-family: SeriouslyNostalgicRegular, system-ui;
+					font-size: 24px;
+					line-height: 32px;
+	
+					em {
+						font-family: BelmonteBallpointCursive, system-ui;
+						font-size: 40px;
+						line-height: 32px;
+					}
+				}
+			}
+	
+			h4 {
+				color: $color-white;
+				font-size: 24px;
+				line-height: 28px;
+			}
+	
+			.payment-nav {
+				color: $color-white;
+				list-style-type: none;
+				margin: 20px auto;
+				max-width: 340px;
+	
+				li {
+					align-items: flex-start;
+					display: flex;
+					font-family: PPMoriRegular, system-ui;
+					font-size: 16px;
+					gap: 5px;
+					line-height: 22px;
+					list-style-type: none;
+					margin: 10px 0;
+	
+					svg {
+						flex: 0 0 20px;
+						position: relative;
+						top: -5px;
+					}
+				}
+			}
+
+			.payment-membership-tier {
+				margin: 40px 0;
+			
+				.membership-tier-body {
+					display: flex;
+					flex-direction: column;
+					gap: 20px;
+					justify-content: center;
+					margin: 0 auto;
+					max-width: 360px;
+				
+					input[name="membership-tier"] {
+						display: none;
+					}
+				
+					input[name="membership-tier"]:checked {
+						+ .membership-tier-inner {
+							&:before {
+								background: linear-gradient(to right, #F3E48A 0%, #84C5FF 100%);
+								border: 1px solid transparent;
+								border-radius: inherit;
+								bottom: -1px;
+								content: '';
+								left: -1px;
+								pointer-events: none;
+								position: absolute;
+								right: -1px;
+								top: -1px;
+								z-index: -1;
+							}
+						}
+					}
+				
+					.membership-tier {
+						flex: 0 0 33%;
+				
+						.membership-tier-inner {
+							background-color: rgba($color-black, 0.75);
+							border-radius: 12px;
+							cursor: pointer;
+							height: 100%; 
+							padding: 20px;
+							position: relative;
+							width: 100%;
+						}
+				
+						> p {
+							font-size: 12px;
+							line-height: 20px;
+							margin-bottom: 0;
+						}
+				
+						h4,
+						ul {
+							font-family: SeriouslyNostalgicFnRegular, system-ui;
+						}
+				
+						h4 {
+							align-items: center;
+							display: flex;
+							font-size: 32px;
+							justify-content: space-between;
+							line-height: 26px;
+							margin: 0;
+							position: relative;
+			
+							em {
+								position: relative;
+								top: -10px;
+			
+								em {
+									font-family: Temeraire, system-ui;
+									font-size: 18px;
+									top: 0;
+								}
+							}
+				
+							span {
+								color: $color-white;
+								display: block;
+								font-family: PPMoriRegular, system-ui;
+								font-size: 12px;
+								margin-bottom: 8px;
+								text-align: right;
+							}
+						}
+				
+						ul {
+							list-style-type: none;
+							margin: 0;
+							padding: 0;
+				
+							li {
+								align-items: start;
+								display: flex;
+								margin: 6px 0;
+								padding-left: 35px;
+								position: relative;
+				
+								svg {
+									left: 0;
+									margin-right: 6px;
+									position: absolute;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+main {
+	&.payment {
+		&__why-sitch {
+			h2 {
+				em {
+					display: block;
+					font-family: Temeraire, system-ui;
+					font-size: 44px;
+					line-height: 52px;
+				}
+			}
+		
+			p {
+				color: rgba($color-white, 0.35);
+				font-size: 14px;
+				
+				&:last-of-type {
+					margin: 0 auto;
+					max-width: 320px;
+					padding: 40px 0;
+				}
+		
+				span {
+					color: $color-white;
+					display: block;
+					font-size: 16px;
+					line-height: 20px;
+					margin: 40px auto 5px auto;
+					max-width: 320px;
+					position: relative;
+					text-transform: uppercase;
+		
+					img {
+						height: 32px;
+						position: absolute;
+						z-index: 0;
+					}
+				}
+	
+				&:nth-child(1n) {
+					img {
+						left: -18px;
+						top: -24px;
+					}
+				}
+		
+				&:nth-of-type(2) {
+					img {
+						left: auto !important;
+						right: 0px;
+					}
+				}
+		
+				&:nth-of-type(3) {
+					img {
+						height: 52px;
+						left: 0 !important;
+						top: -42px !important;
+					}
+				}
+			}
+		}
+	
+		&__group-chat {
+			background-image: url(../img/sitch-updated/bg-group-chat.webp);
+			background-position: top left;
+			background-repeat: repeat;
+		
+			.group-chat-heading {
+				background: $color-black;
+				padding: 40px;
+		
+				h2 {
+					font-size: 56px;
+					line-height: 62px;
+					margin: 0 auto;
+					max-width: 640px;
+		
+					@media (max-width: 768px) {
+						font-size: 32px;
+						line-height: 38px;
+						max-width: 540px;
+					}
+		
+					em {
+						font-family: BelmonteBallpointCursive, system-ui;
+						font-size: 72px;
+						line-height: 36px;
+		
+						@media (max-width: 768px) {
+							font-size: 52px;
+						}
+					}
+		
+					span {
+						font-family: Temeraire, system-ui;
+						font-size: 64px;
+						line-height: 52px;
+		
+						@media (max-width: 768px) {
+							font-size: 44px;
+						}
+					}
+				}
+			}
+		
+			.group-chat-img {
+				margin: 0 auto;
+				max-width: 540px;
+				padding: 40px 20px;
+			}
+		}
+	
+		&__who-is-behind {
+			padding: 0;
+			padding: 40px 0 160px 0;
+			position: relative;
+		
+			&:before {
+				background-image: url(../img/sitch-updated/bg-payment-clouds.webp);
+				background-position: center 60%;
+				background-repeat: no-repeat;
+				background-size: cover;
+				bottom: 0;
+				content: '';
+				left: 0;
+				position: absolute;
+				right: 0;
+				top: 0;
+				z-index: -1;
+			}
+	
+			h2 {
+				font-size: 56px;
+				line-height: 62px;
+				margin: 0 auto;
+				max-width: 640px;
+	
+				@media (max-width: 768px) {
+					font-size: 32px;
+					line-height: 38px;
+					max-width: 540px;
+					text-align: center;
+				}
+	
+				em {
+					font-family: Temeraire, system-ui;
+					font-size: 64px;
+					line-height: 52px;
+	
+					@media (max-width: 768px) {
+						font-size: 44px;
+					}
+				}
+			}
+	
+			.flex-cards {
+				align-items: center;
+				display: flex;
+				justify-content: center;
+	
+				@media (max-width: 768px) {
+					flex-direction: column;
+				}
+			}
+	
+			.flex-card {
+				background: rgba($color-black-alt, 0.35);
+				border: 0;
+				border-bottom: 0;
+				border-bottom-left-radius: 0;
+				border-bottom-right-radius: 0;
+				border-radius: 12px;
+				font-size: 18px;
+				line-height: 22px;
+				padding: 30px;
+				position: relative;
+				width: 375px;
+	
+				@media (max-width: 768px) {
+					width: 320px;
+				}
+	
+				a {
+					font-size: 18px;
+					line-height: 24px;
+	
+					@media (max-width: 768px) {
+						font-size: 14px;
+					}
+				}
+	
+				&:first-child {
+					left: -40px;
+					transform: rotate(-7deg);
+					z-index: 1;
+	
+					@media (max-width: 768px) {
+						left: 0;
+						transform: rotate(-5deg);
+					}
+	
+					img {
+						bottom: -40px;
+						left: -25px;
+						position: absolute;
+					}
+				}
+	
+				&:last-child {
+					right: -40px;
+					top: 70px;
+					transform: rotate(7deg);
+					z-index: 0;
+	
+					@media (max-width: 768px) {
+						left: 0;
+						right: 0;
+						top: 70px;
+						transform: rotate(5deg);
+					}
+	
+					img {
+						position: absolute;
+						right: -25px;
+						top: -40px;
+					}
+				}
+	
+				img {
+					margin-bottom: 0;
+					max-width: 75px;
+				}
+					
+				p {
+					color: $color-white;
+					font-size: 18px;
+					line-height: 24px;
+	
+					@media (max-width: 768px) {
+						font-size: 14px;
+					}
+	
+					&:last-of-type {
+						margin-bottom: 0;
+					}
+				}
+			}
+		}
+	
+		.activate-fixed-container {
+			background: linear-gradient(180deg, $color-black-alt 0%, $color-black 100%);
+			bottom: 0;
+			left: 0;
+			padding: 30px;
+			position: fixed;
+			text-align: center;
+			width: 100%;
+			z-index: 9;
+		
+			&.activate-end {
+				background: transparent;
+				position: static;
+			}
+			
+			.activate-button {
+				align-items: center;
+				background-image: url(../img/sitch-updated/btn-become-member.webp);
+				background-position: center;
+				background-repeat: no-repeat;
+				background-size: 360px 78px;
+				color: $color-black;
+				display: flex;
+				font-family: SeriouslyNostalgicFnRegular, system-ui;
+				font-size: 22px;
+				font-style: italic;
+				height: 78px;
+				justify-content: center;
+				letter-spacing: 2px;
+				margin: 0 auto;
+				text-transform: uppercase;
+				width: 360px;
+			
+				&:hover,
+				&:active,
+				&:focus {
+					color: $color-black-alt;
+				}
+			}
+		}
+	}
+}

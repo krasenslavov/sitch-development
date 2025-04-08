@@ -6,6 +6,12 @@
 @import './sitch-updated/base/global';
 @import './sitch-updated/base/utility';
 
+// Global
+@import './sitch-updated/header';
+@import './sitch-updated/navbar';
+@import './sitch-updated/hero';
+@import './sitch-updated/footer';
+
 // Sections
 @import './sitch-updated/faqs';
 @import './sitch-updated/how-it-works';
