@@ -1,33 +1,9 @@
 @font-face {
 	font-display: swap;
-	font-family: 'ConsortRRLightCondensed';
-	font-style: 'normal';
-	font-weight: 400;
-	src: url('../fonts/ConsortRRLightCondensed.woff2') format('woff2');
-}
-
-@font-face {
-	font-display: swap;
 	font-family: 'PPMoriRegular';
 	font-style: 'normal';
 	font-weight: 400;
 	src: url('../fonts/PPMoriRegular.woff2') format('woff2');
-}
-
-@font-face {
-	font-display: swap;
-	font-family: 'WixMadeforText';
-	font-style: 'normal';
-	font-weight: 400;
-	src: url('../fonts/WixMadeforText.woff2') format('woff2');
-}
-
-@font-face {
-	font-display: swap;
-	font-family: 'SeriouslyNostalgicRegular';
-	font-style: 'normal';
-	font-weight: 400;
-	src: url('../fonts/SeriouslyNostalgic-Regular.woff2') format('woff2');
 }
 
 @font-face {
@@ -54,15 +30,29 @@
 	src: url('../fonts/Temeraire.woff2') format('woff2');
 }
 
-body, input, button, textarea {
+.font-pp-mori-regular {
+	font-family: PPMoriRegular, system-ui;
+}
+
+.font-seriously-nostalgic-fn-regular {
+	font-family: SeriouslyNostalgicFnRegular, system-ui;
+}
+
+.font-belmonte-ballpoint-cursive {
+	font-family: BelmonteBallpointCursive, system-ui;
+}
+
+.font-temeraire {
+	font-family: Temeraire, system-ui;
+}
+
+body, p, input, button, textarea {
 	font-family: PPMoriRegular, system-ui;
 	font-size: 18px;
 	line-height: 26px;
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: SeriouslyNostalgicFnRegular, system-ui;
-
 	br {
 		@media (max-width: 768px) {
 			display: none;

@@ -1,0 +1,20 @@
+@import './home/hero';
+@import './home/how-it-works';
+@import './home/testimonials';
+@import './home/members';
+@import './home/features';
+@import './home/who-is-behind';
+
+.home {
+	.home-heading {
+		font-size: 88px;
+		line-height: 104px;
+		margin: 40px 0;
+
+		@media(max-width: 768px) {
+			font-size: 48px;
+			line-height: 52px;
+			margin-bottom: 0;
+		}
+	}
+}

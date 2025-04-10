@@ -7,14 +7,14 @@
 @import './sitch-updated/base/utility';
 
 // Global
-@import './sitch-updated/header';
-@import './sitch-updated/navbar';
-@import './sitch-updated/hero';
-@import './sitch-updated/footer';
+@import './sitch-updated/global/header';
+@import './sitch-updated/global/navbar';
+@import './sitch-updated/global/footer';
 
-// Sections
+// Main
+@import './sitch-updated/communities';
 @import './sitch-updated/faqs';
-@import './sitch-updated/how-it-works';
-@import './sitch-updated/nominate-form';
+@import './sitch-updated/home';
+@import './sitch-updated/nominate';
 @import './sitch-updated/payment';
 @import './sitch-updated/why-sitch';

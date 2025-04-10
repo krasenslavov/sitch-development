@@ -1,0 +1,135 @@
+.navbar {
+	&.navbar {
+		align-items: center;
+		display: flex;
+		justify-content: space-between;
+		margin: 0 auto;
+		max-width: 1280px;
+		padding: 40px 0;
+	}
+	.navbar-collapse {
+		flex-grow: 0;
+	}
+	.navbar-brand {
+		@media(max-width: 960px) {
+			left: 20px;
+			margin: 0 auto;
+			position: relative;
+		}
+		&.navbar-brand-sitch {
+			img {
+				height: 52px;
+				@media(max-width: 960px) {
+					height: 44px;
+				}
+			}
+		}
+	}
+	.navbar-toggler {
+		background-color: transparent;
+		border-color: transparent;
+		margin-right: 15px;
+		padding: 0px;
+		&:focus,
+		&:hover,
+		&:active {
+			box-shadow: none;
+			outline: 2px solid rgba($color-white, 0.65);
+		}
+		.navbar-toggler-icon {
+			background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30' width='45' height='45' fill='white'%3e%3cpath stroke='white' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+			background-size: 150%;
+			cursor: pointer;
+		}
+	}
+	.navbar-nav {
+		align-items: center;
+		gap: 0;
+		@media(max-width: 960px) {
+			background-color: rgba($color-black, 0.45);
+			border: 1px solid rgba($color-white, 0.03);
+			border-radius: 20px;
+			margin-top: 10px;
+			padding: 10px 10px 20px 10px;
+			text-align: center;
+		}
+		.nav-item {
+			align-items: center;
+			border: 1px solid transparent;
+			border-radius: 20px;
+			display: flex;
+			font-family: 'SeriouslyNostalgicFnRegular', system-ui;
+			font-size: 32px;
+			height: 52px;
+			justify-content: center;
+			line-height: 32px;
+			margin-left: 60px;
+			padding: 0 10px;
+			transition: background-color 400ms ease-in-out;
+			@media(max-width: 1200px) {
+				margin-left: 10px;
+				padding: 0;
+			}
+			@media(max-width: 960px) {
+				font-size: 26px;
+				line-height: 32px;
+				margin: 5px 0;
+				width: 100%;
+				&:last-of-type {
+					display: block !important;
+				}
+				&:hover,
+				&:active,
+				&:focus {
+					background-color: transparent !important;
+				}
+			}
+			&:active,
+			&:focus {
+				background-color: rgba($color-white, 0.05);
+			}
+			&:last-of-type {
+				display: none;
+			}
+		}
+		.nav-link {
+			color: $color-white;
+			&.nav-link-download {
+				display: none;
+				@media(max-width: 1024px) {
+					display: block;
+					margin-top: 10px;
+				}
+			}
+		}
+	}
+	.nav-link-download {
+		align-items: center;
+		background-color: $color-black-alt;
+		border-radius: 20px;
+		color: $color-white;
+		display: block;
+		display: flex;
+		font-family: 'SeriouslyNostalgicFnRegular', system-ui;
+		font-size: 18px;
+		font-style: italic;
+		height: 52px;
+		justify-content: center;
+		letter-spacing: 2px; 
+		line-height: 26px;
+		padding: 10px 40px;
+		text-decoration: none;
+		text-transform: uppercase;
+		transition: background-color 400ms ease-in-out;
+		@media(max-width: 1024px) {
+			display: none;
+			font-size: 22px;
+			line-height: 28px;
+		}
+		&:hover,
+		&:active,
+		&:focus {
+			background-color: rgba($color-white, 0.05);
+		}
+	}
+}
