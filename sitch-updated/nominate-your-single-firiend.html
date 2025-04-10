@@ -8,71 +8,21 @@
 	<link href="../assets/dist/css/sitch-updated.css" rel="stylesheet" />
 </head>
 
-<body class="bg-striped">
+<body>
 
 	<header>
-		<div class="container-fluid">
-			<nav class="navbar navbar-expand-md">
-				<a href="https://download.joinsitch.com/" class="navbar-brand navbar-brand-sitch">
-					<img src="../assets/dist/img/sitch/sitch-logo.webp" alt="Sitch logo" />
-				</a>
 
-				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-					aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-
-				<div class="collapse navbar-collapse" id="navbarNavDropdown">
-					<ul class="navbar-nav mb-2 mb-lg-0">
-						<li class="nav-item">
-							<a href="#" class="nav-link" aria-current="page">
-								Why Sitch
-							</a>
-						</li>
-						<li class="nav-item">
-							<a href="#" class="nav-link" aria-current="page" s>
-								Communities
-							</a>
-						</li>
-						<li class="nav-item">
-							<a href="#" class="nav-link" aria-current="page" s>
-								Nominate your Friend
-							</a>
-						</li>
-						<li class="nav-item">
-							<a href="#" class="nav-link nav-link-download" aria-current="page" s>
-								Download Now
-							</a>
-						</li>
-					</ul>
-				</div>
-
-				<a href="#" class="nav-link-download">
-					Download Now
-				</a>
-			</nav>
-		</div>
 	</header>
 
-	<main class="nominate-form">
+	<main class="nominate">
 		<div class="container">
-			<div class="text-center max-width mw-640">
-				<h1 class="mt-5">
-					Nominate your hot and single <em>friend</em>
-				</h1>
-				<h2 class="my-5">
-					Know someone who is a total catch?<br />
-					Help them out! Tell us a bit about your friend and<br />
-					we'll set up them up.
-				</h2>
-				<p class="mb-5">
-					Sitch is an invite-only matchmaking service. You can let them know you vouched for them up (or not!). They can
-					thank you after we find them the one.
-				</p>
-			</div>
-
-			<div class="max-width mw-640">
+			<div class="max-width mw-640 my-5">
 				<div class="tally-form">
+					<p class="text-center font-pp-mori-regular">
+						Sitch is an invite-only matchmaking service.<br />
+						We've set up 5000 couples and counting!
+					</p>
+
 					<iframe
 						data-tally-src="https://tally.so/embed/nGBqrQ?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=0"
 						loading="lazy" width="100%" height="1080" frameborder="0" marginheight="0" marginwidth="0"
@@ -85,11 +35,18 @@
 		</div>
 	</main>
 
-	<footer>
+	<footer class="footer__clouds">
+		<div class="footer-overlay"></div>
+
+		<div class="footer-heading text-center font-seriously-nostalgic-fn-regular">
+			You can let them know<br />
+			you vouched for them up <em class="font-belmonte-ballpoint-cursive">(or not!)</em>
+		</div>
+
 		<div class="footer-content">
 			<div class="text-center max-width mw-640">
 				<a href="https://download.joinsitch.com/" class="footer-logo">
-					SITCH
+					<img src="../assets/dist/img/sitch-updated/sitch-logo.webp" alt="Sitch logo" class="img-fluid" />
 				</a>
 
 				<nav>
@@ -132,7 +89,6 @@
 		<div class="footer-shape">
 			<svg viewBox="0 0 100 65" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg">
 				<path id="textPath" d="M 5,5 L 5,50 Q 5,60 15,60 L 85,60 Q 95,60 95,50 L 95,5" fill="none" />
-
 				<text>
 					<textPath href="#textPath" startOffset="0%">
 						Our products make the world a more connected, happier place. We believe the thechnology can teach us to be

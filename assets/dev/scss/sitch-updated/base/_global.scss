@@ -25,16 +25,16 @@
 }
 
 html {
-	@media (max-width: 768px) {
-		overflow-x: hidden;
-	}
+	overflow-x: hidden;
 }
 
 body {
-	background: $color-black;
+	background: $color-black-alt;
+	color: $color-white;
+	overflow-x: hidden;
 
 	&.bg-striped {
-		background: $color-black url(../img/sitch-updated/bg-striped.webp) repeat top left;
+		background: $color-black-alt url(../img/sitch-updated/bg-striped.webp) repeat top left;
 	}
 }
 
@@ -58,16 +58,6 @@ h1 {
 	@media (max-width: 768px) {
 		font-size: 44px;
 		line-height: 52px;
-	}
-
-	.text-larger {
-		font-size: 96px;
-		line-height: 104px;
-
-		@media (max-width: 768px) {
-			font-size: 56px;
-			line-height: 64px;
-		}
 	}
 }
 

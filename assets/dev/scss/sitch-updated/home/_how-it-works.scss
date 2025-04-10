@@ -1,0 +1,132 @@
+.home {
+	.how-it-works {
+		border: 1px solid rgba($color-white, 0.45);
+		border-radius: 20px;
+		position: relative;
+		@media(max-width: 768px) {
+			border: 0;
+			border-radius: 0;
+		}
+		.how-it-works-white-circle {
+			align-items: center;
+			background: url(../img/sitch-updated/icon-circle-white.webp) no-repeat bottom center;
+			background-size: 60px 60px;
+			color: $color-black-alt;
+			display: flex;
+			font-size: 18px;
+			height: 60px;
+			justify-content: center;
+			line-height: 24px;
+			position: absolute;
+			width: 60px;
+			@media(max-width: 768px) {
+				display: none;
+			}
+		}
+		.how-it-works-step {
+			border-bottom: 1px solid rgba($color-white, 0.45);
+			display: flex;
+			min-height: 540px;
+			@media(max-width: 768px) {
+				border: 0;
+				flex-direction: column;
+				min-height: auto;
+			}
+			&:nth-child(1),
+			&:nth-child(3) {
+				.how-it-works-white-circle {
+					left: -30px;
+				}
+			}
+			&:nth-child(2) {
+				@media(max-width: 768px) {
+					.how-it-works-text {
+						order: 1;
+					}
+					.how-it-works-group-chat {
+						order: 2;
+					}
+				}
+				.how-it-works-white-circle {
+					right: -30px;
+				}
+			}
+			&:nth-child(4) {
+				.how-it-works-white-circle {
+					position: relative;
+				}
+			}
+			&:first-of-type {
+				.how-it-works-group-chat {
+					border-top-right-radius: 20px;
+					overflow: hidden;
+					@media(max-width: 768px) {
+						border-radius: 0;
+					}
+				}
+			}
+			&:last-of-type {
+				border-bottom: 0;
+				min-height: 360px;
+				@media(max-width: 768px) {
+					min-height: 240px;
+				}
+			}
+			.how-it-works-text {
+				align-items: center;
+				display: flex;
+				flex: 0 0 50%;
+				justify-content: center;
+				@media(max-width: 768px) {
+					padding: 40px 0;
+				}
+				.how-it-works-heading {
+					font-size: 52px;
+					line-height: 52px;
+					max-width: 360px;
+					@media(max-width: 768px) {
+						font-size: 32px;
+						line-height: 36px;
+						text-align: center;
+					}
+				}
+			}
+			.how-it-works-group-chat {
+				align-items: center;
+				background: url(../img/sitch-updated/bg-checkers.webp) no-repeat center center;
+				background-size: cover;
+				display: flex;
+				flex: 0 0 50%;
+				justify-content: center;
+				@media(max-width: 768px) {
+					padding: 20px 0;
+				}
+			}
+			.how-it-works-overlay {
+				align-items: center;
+				background: url(../img/sitch-updated/image.webp) no-repeat center center;
+				background-size: cover;
+				border-bottom-left-radius: 20px;
+				border-bottom-right-radius: 20px;
+				display: flex;
+				flex: 0 0 100%;
+				justify-content: center;
+				overflow: hidden;
+				@media(max-width: 768px) {
+					border-radius: 0;
+				}
+				.how-it-works-text {
+					display: flex;
+					flex: 0 0 100%;
+					gap: 20px;
+					@media(max-width: 768px) {
+						min-height: 240px;
+					}
+					.how-it-works-heading {
+						max-width: 100%;
+					}
+				}
+			}
+		}
+	}
+}
