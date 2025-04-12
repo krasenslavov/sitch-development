@@ -1,0 +1,153 @@
+.hero {
+	&__payment {
+		padding: 0 0 40px 0;
+		.hero-payment-heading {
+			font-size: 42px;
+			line-height: 46px;
+			margin: 0 0 10px 0;
+			@media(max-width: 768px) {
+				font-size: 32px;
+				line-height: 36px;
+			}
+		}
+		.hero-payment-sub-heading {
+			font-size: 34px;
+			line-height: 38px;
+			margin: 0 0 40px 0;
+			@media(max-width: 768px) {
+				font-size: 24px;
+				line-height: 28px;
+			}
+		}
+		.hero-payment-nav {
+			list-style-type: none;
+			margin: 0 auto 40px auto;
+			max-width: 360px;
+			padding: 0;
+			@media(max-width: 768px) {
+				max-width: 100%;
+			}
+			li {
+				align-items: flex-start;
+				display: flex;
+				font-size: 22px;
+				gap: 5px;
+				line-height: 28px;
+				list-style-type: none;
+				margin: 10px 0;
+				@media(max-width: 768px) {
+					font-size: 16px;
+					line-height: 22px;
+				}
+				svg {
+					flex: 0 0 20px;
+					position: relative;
+					top: -3px;
+				}
+			}
+		}
+		.hero-payment-membership-tier {
+			.hero-payment-membership-tier-body {
+				display: flex;
+				flex-direction: column;
+				gap: 20px;
+				justify-content: center;
+				margin: 0 auto;
+				max-width: 360px;
+				input[name="membership-tier"] {
+					display: none;
+				}
+				input[name="membership-tier"]:checked {
+					+ .hero-payment-membership-tier-inner {
+						&:before {
+							background-image: linear-gradient(to right, rgba($color-gradient-a, .5) 0%, rgba($color-gradient-b, 0.5) 100%);
+							border: 1px solid transparent;
+							border-radius: inherit;
+							bottom: -1px;
+							content: '';
+							left: -1px;
+							pointer-events: none;
+							position: absolute;
+							right: -1px;
+							top: -1px;
+							z-index: 0;
+						}
+					}
+				}
+				.hero-payment-membership-tier {
+					flex: 0 0 33%;
+					.hero-payment-membership-tier-inner { 
+						align-items: center;
+						background-color: rgba($color-black, 0.75);
+						background-image: transparent;
+						border-radius: 12px;
+						cursor: pointer;
+						display: flex;
+						height: 100%;
+						min-height: 110px;
+						padding: 0 20px;
+						position: relative;
+						width: 100%;
+					}
+					> p {
+						font-size: 12px;
+						line-height: 20px;
+						margin-bottom: 0;
+					}
+					h4,
+					ul {
+						font-family: SeriouslyNostalgicFnRegular, system-ui;
+					}
+					h4 {
+						align-items: center;
+						display: flex;
+						flex: 1 0;
+						font-size: 32px;
+						justify-content: space-between;
+						line-height: 24px;
+						margin: 0;
+						position: relative;
+						em {
+							position: relative;
+							em {
+								font-family: Temeraire, system-ui;
+								font-size: 18px;
+								top: 0;
+							}
+						}
+						span {
+							color: $color-white;
+							display: block;
+							font-family: PPMoriRegular, system-ui;
+							font-size: 12px;
+							line-height: 18px;
+							position: relative;
+							text-align: right;
+							top: 10px;
+							strong {
+								display: block;
+							}
+						}
+					}
+					ul {
+						list-style-type: none;
+						margin: 0;
+						padding: 0;
+						li {
+							align-items: start;
+							display: flex;
+							margin: 6px 0;
+							padding-left: 35px;
+							position: relative;
+							svg {
+								left: 0;
+								margin-right: 6px;
+								position: absolute;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

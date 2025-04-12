@@ -1,0 +1,62 @@
+.payment {
+	.payment-sitch-steps {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+		padding: 0 0 20px 0;
+		@media(max-width: 768px) {
+			padding: 0 20px;
+		}
+		.payment-sitch-step {
+				margin: 0 auto;
+				max-width: 380px;
+				position: relative;
+				@media(max-width: 768px) {
+					max-width: 100%;
+				}
+				&:nth-child(2) {
+					.payment-sitch-step-yellow-circle {
+						left: auto;
+						right: 0;
+					}
+				}
+		}
+		.payment-sitch-step-heading {
+			font-size: 24px;
+			line-height: 28px;
+			margin-bottom: 10px;
+			@media(max-width: 768px) {
+				font-size: 16px;
+				line-height: 20px;
+			}
+		}
+		.payment-sitch-step-yellow-circle,
+		.payment-sitch-step-yellow-star {
+			align-items: center;
+			color: $color-black-alt;
+			display: flex;
+			font-size: 14px;
+			justify-content: center;
+			left: -40px;
+			line-height: 14px;
+			position: absolute;
+			top: -30px;
+			z-index: -1;
+			@media(max-width: 768px) {
+				left: 0;
+			}
+		}
+		.payment-sitch-step-yellow-circle {
+			background: url(../img/sitch-updated/icon-circle-yellow.webp) no-repeat bottom center;
+			background-size: 40px 40px;
+			height: 40px;
+			width: 40px;
+		}
+		.payment-sitch-step-yellow-star {
+			background: url(../img/sitch-updated/icon-star-yellow.webp) no-repeat bottom center;
+			background-size: 50px 50px;
+			height: 50px;
+			width: 50px;
+		}
+	}
+}

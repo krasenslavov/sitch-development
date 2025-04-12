@@ -1,0 +1,19 @@
+.faqs {
+	&__payment {
+		margin: 0 auto;
+		max-width: 640px;
+		padding: 40px 0 80px 0;
+		@media(max-width: 768px) {	
+			padding: 40px 10px 80px 10px;
+		}
+		.payment-faqs-heading {
+			font-size: 42px;
+			line-height: 46px;
+			padding: 40px 0;
+			@media(max-width: 768px) {	
+				font-size: 32px;
+				line-height: 36px;
+			}
+		}
+	}
+}

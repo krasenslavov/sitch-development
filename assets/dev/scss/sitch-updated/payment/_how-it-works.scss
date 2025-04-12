@@ -1,0 +1,41 @@
+.payment {
+	.payment-how-it-works {
+		.payment-how-it-works-text {
+			font-size: 42px;
+			line-height: 44px;
+			padding: 40px 20px;
+			@media(max-width: 768px) {
+				font-size: 32px;
+				line-height: 36px;
+			}
+			span {
+				font-size: 62px;
+				line-height: 44px;
+				@media(max-width: 768px) {
+					font-size: 52px;
+					line-height: 36px;
+				}
+			}
+			.payment-how-it-works-heading {
+				margin: 0 auto;
+				max-width: 480px;
+			}
+		}
+		.payment-how-it-works-group-chat {
+			align-items: center;
+			background: url(../img/sitch-updated/bg-checkers.webp) no-repeat center center;
+			background-size: cover;
+			display: flex;
+			justify-content: center;
+			min-height: 360px;
+			padding: 20px 0;
+			img {
+				margin: 0 auto;
+				max-width: 480px;
+				@media(max-width: 768px) {
+					max-width: 100%;
+				}
+			}
+		}
+	}
+}
