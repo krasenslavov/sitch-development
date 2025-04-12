@@ -1,0 +1,25 @@
+@import './payment/hero';
+@import './payment/how-it-works';
+@import './payment/sitch-steps';
+@import './payment/who-is-behind';
+@import './payment/faqs';
+
+.payment {
+	.payment-heading {
+		font-size: 54px;
+		line-height: 62px;
+		padding: 60px 0 40px 0;
+		@media(max-width: 768px) {	
+			font-size: 44px;
+			line-height: 48px;
+		}
+		span {
+			font-size: 54px;
+			line-height: 62px;
+			@media(max-width: 768px) {	
+				font-size: 44px;
+				line-height: 52px;
+			}
+		}
+	}
+}

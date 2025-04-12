@@ -46,16 +46,16 @@
 	font-family: Temeraire, system-ui;
 }
 
-body, p, input, button, textarea {
-	font-family: PPMoriRegular, system-ui;
-	font-size: 18px;
-	line-height: 26px;
-}
-
 h1, h2, h3, h4, h5, h6 {
 	br {
 		@media (max-width: 768px) {
 			display: none;
 		}
 	}
+}
+
+body, p, input, button, textarea {
+	font-family: PPMoriRegular, system-ui;
+	font-size: 18px;
+	line-height: 26px;
 }

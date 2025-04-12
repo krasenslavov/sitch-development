@@ -1,0 +1,24 @@
+.hero {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	min-height: 540px;
+	h1 {
+		font-size: 68px;
+		line-height: 72px;
+		margin: 0 0 40px 0;
+		@media(max-width: 768px) {
+			font-size: 44px;
+			line-height: 48px;
+		}
+	}
+	.hero-sub-heading {
+		font-size: 36px;
+		line-height: 42px;
+		@media(max-width: 768px) {
+			font-size: 22px;
+			line-height: 26px;
+		}
+	}
+}
