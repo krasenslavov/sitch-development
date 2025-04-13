@@ -1,0 +1,30 @@
+.communities {
+	.communities-list {
+		.communities-list-item {
+			display: flex;
+			font-family: SeriouslyNostalgicFnRegular, system-ui;
+			font-size: 28px;
+			gap: 20px;
+			line-height: 40px;
+			margin-bottom: 20px;
+			@media(max-width: 768px) {
+				font-size: 24px;
+				line-height: 28px;
+			}
+		}
+		.communities-white-circle {
+			align-items: center;
+			background: url(../img/sitch-updated/icon-circle-white.webp) no-repeat bottom center;
+			background-size: 48px 48px;
+			color: $color-black-alt;
+			display: flex;
+			flex: 0 0 48px;
+			font-family: PPMoriRegular, system-ui;
+			font-size: 18px;
+			height: 48px;
+			justify-content: center;
+			line-height: 28px;
+			width: 48px;
+		}
+	}
+}

@@ -1,0 +1,33 @@
+.communities {
+	.communities-ticker {
+		align-items: center;
+		background-color: $color-dark-grey;
+		display: flex;
+		flex-wrap: nowrap;
+		font-size: 26px;
+		justify-content: center;
+		line-height: 32px;
+		overflow: hidden;
+		padding: 5px 0;
+		@media(max-width: 768px) {
+			font-size: 20px;
+			line-height: 28px;
+		}
+		span {
+			align-items: center;
+			display: flex;
+			font-family: SeriouslyNostalgicFnRegular, system-ui;
+			text-wrap: nowrap;
+			&:before {
+				background: url(../img/sitch-updated/icon-star-yellow.webp) no-repeat center center;
+				background-size: 26px 26px;
+				content: '';
+				display: block;
+				height: 26px;
+				padding: 0 40px;
+				position: relative;
+				width: 26px;
+			}
+		}
+	}
+}

@@ -122,13 +122,15 @@
 		transition: background-color 400ms ease-in-out;
 		@media(max-width: 1024px) {
 			display: none;
-			font-size: 22px;
+			font-size: 20px;
+			height: auto;
 			line-height: 28px;
+			padding: 10px 20px;
 		}
 		&:hover,
 		&:active,
 		&:focus {
-			background-color: rgba($color-white, 0.05);
+			background-color: rgba($color-white, 0.15);
 		}
 	}
 }

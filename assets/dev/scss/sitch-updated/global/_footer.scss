@@ -77,7 +77,6 @@ footer {
 
 .footer {
 	position: relative;
-
 	&__checkers {
 		background: url(../img/sitch-updated/bg-footer.png) no-repeat top center;
 		background-size: cover;
@@ -104,5 +103,14 @@ footer {
 		top: 120px;
 		width: 100%;
 		z-index: 9;
+		@media(max-width: 1200px) {
+			padding-top: 120px;
+			position: relative;
+			top: auto;
+		}
+		@media(max-width: 768px) {
+			font-size: 24px;
+			line-height: 32px;
+		}
 	}
 }
