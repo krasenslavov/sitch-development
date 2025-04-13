@@ -1,0 +1,37 @@
+.communities {
+	.communities-section {
+		align-items: center;
+		display: flex;
+		gap: 80px;
+		padding: 40px 0;
+		@media(max-width: 768px) {
+			flex-direction: column;
+			gap: 40px;
+		}
+		.communities-column {
+			flex: 0 0 50%;
+			@media(max-width: 768px) {
+				flex: 0 0 100%;
+				text-align: center;
+			}
+		}
+		&__bottom {
+			align-items: flex-start;
+			gap: 20px;
+			padding: 50px 0;
+			.communities-column {
+				text-align: left;
+			}
+			.communities-list-item {
+				align-items: center;
+			}
+		}
+		&__footer {
+			gap: 20px;
+			padding: 20px 0 80px 0;
+			.communities-column {
+				text-align: left;
+			}
+		}
+	}
+}

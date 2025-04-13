@@ -1,0 +1,31 @@
+.communities {
+	.communities-footer-heading {
+		font-size: 52px;
+		line-height: 52px;
+		margin-bottom: 20px;
+		@media(max-width: 768px) {
+			font-size: 32px;
+			line-height: 36px;
+		}
+	}
+	.communities-footer-sub-heading {
+		font-size: 32px;
+		line-height: 36px;
+		@media(max-width: 768px) {
+			font-size: 20px;
+			line-height: 24px;
+		}
+		span {
+			color: $color-gradient-a;
+		}
+		a {
+			color: $color-gradient-a;
+			text-decoration: underline;
+			&:hover,
+			&:active,
+			&:focus {
+				color: $color-white;
+			}
+		}
+	}
+}

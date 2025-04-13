@@ -109,6 +109,9 @@
 						position: relative;
 						em {
 							position: relative;
+							@media(max-width: 768px) {
+								display: block;
+							}
 							em {
 								font-family: Temeraire, system-ui;
 								font-size: 18px;
