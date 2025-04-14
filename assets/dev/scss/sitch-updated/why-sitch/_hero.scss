@@ -1,0 +1,36 @@
+.hero {
+	&__why-sitch {
+		h1 {
+			font-size: 88px;
+			line-height: 94px;
+			@media(max-width: 768px) {
+				font-size: 44px;
+				line-height: 48px;
+				margin-bottom: 20px;
+				text-align: center;
+			}
+		}
+		.hero-sub-heading {
+			font-size: 32px;
+			line-height: 36px;
+			@media(max-width: 768px) {
+				font-size: 20px;
+				line-height: 20px;
+				text-align: center;
+			}
+		}
+		.hero-why-sitch-container {
+			align-items: center;
+			display: flex;
+			gap: 40px;
+			justify-content: space-between;
+			padding: 40px 0 80px 0;
+			@media(max-width: 768px) {
+				flex-direction: column;
+			}
+			.hero-why-sitch-cell {
+				flex: 0 0 50%;
+			}
+		}
+	}
+}

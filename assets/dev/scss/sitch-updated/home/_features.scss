@@ -1,5 +1,7 @@
 .home {
 	.features {
+		margin: 0 auto;
+		max-width: 1024px;
 		padding: 80px 0;
 		.features-heading-top {
 			font-size: 48px;
@@ -65,9 +67,13 @@
 					}
 				}
 				.feature-text {
+					font-size: 24px;
+					line-height: 28px;
 					margin-top: 20px;
 					max-width: 70%;
 					@media(max-width: 768px) {
+						font-size: 20px;
+						line-height: 24px;
 						max-width: 100%;
 					}
 				}
