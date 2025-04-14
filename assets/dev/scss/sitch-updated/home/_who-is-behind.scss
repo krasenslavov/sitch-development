@@ -1,101 +1,109 @@
-.who-is-behind {
-	padding: 80px 0 0 0;
-	.who-is-behind-heading {
-		font-size: 60px;
-		line-height: 64px;
-		margin-bottom: 40px;
-		@media(max-width: 768px) {
-			font-size: 32px;
-			line-height: 36px;
-		}
-	}
-	.who-is-behind-cards {
-		align-items: center;
-		display: flex;
-		gap: 60px;
-		justify-content: center;
-		padding: 80px 0 160px 0;
-		@media(max-width: 768px) {	
-			flex-direction: column;
-			gap: 120px;
-		}
-		.who-is-behind-card {
-			align-items: center;
-			background-color: $color-black;
-			border-radius: 20px;
-			display: flex;
-			flex: 0 0 360px;
-			height: 200px;
-			padding: 30px;
-			position: relative;
+.footer {
+	&__who-is-behind {
+		padding: 80px 0 0 0;
+		.who-is-behind-heading {
+			font-size: 60px;
+			line-height: 64px;
+			margin: 40px 0;
 			@media(max-width: 768px) {
-				flex: 0 0 100%;
+				font-size: 32px;
+				line-height: 36px;
+				margin: 0;
 			}
-			a {
-				font-size: 16px;
-				line-height: 20px;
+		}
+		.who-is-behind-cards {
+			align-items: center;
+			display: flex;
+			gap: 60px;
+			justify-content: center;
+			margin: 0 auto;
+			max-width: 360px;
+			padding: 80px 0 160px 0;
+			@media(max-width: 768px) {	
+				flex-direction: column;
+				gap: 120px;
 			}
-			img {
-				height: 80px;
-				position: absolute;
-				right: -40px;
-				top: -40px;
-				width: 80px;
-				+ img {
-					height: 60px;
-					width: 60px;
+			.who-is-behind-card {
+				align-items: center;
+				background-color: $color-black;
+				border-radius: 20px;
+				display: flex;
+				flex: 0 0 360px;
+				height: 200px;
+				padding: 30px;
+				position: relative;
+				@media(max-width: 768px) {
+					flex: 0 0 100%;
 				}
-			}
-			&:first-of-type {
-				transform: rotate(-8deg);
+				a {
+					font-size: 16px;
+					line-height: 20px;
+				}
 				img {
-					@media(max-width: 768px) {
-						bottom: -60px;
-						left: 0px;
-						right: auto;
+					height: 80px;
+					position: absolute;
+					right: -40px;
+					top: -40px;
+					width: 80px;
+					+ img {
+						height: 60px;
+						width: 60px;
+					}
+				}
+				&:first-of-type {
+					transform: rotate(-6deg);
+					img {
+						@media(max-width: 768px) {
+							bottom: -60px;
+							left: 0px;
+							right: auto;
+							top: auto;
+						}
+					}
+					img + img {
+						left: auto;
+						right: 120px;
+						top: -40px;
+					}
+				}
+				&:last-of-type {
+					transform: rotate(6deg);
+					img {
+						@media(max-width: 768px) {
+							right: 0px;
+						}
+					}
+					img + img {
+						bottom: -30px;
+						right: 60px;
 						top: auto;
 					}
 				}
-				img + img {
-					left: auto;
-					right: 120px;
-					top: -40px;
+				.who-is-behind-text {
+					font-size: 14px;
+					line-height: 20px;
 				}
 			}
-			&:last-of-type {
-				transform: rotate(8deg);
-				img {
-					@media(max-width: 768px) {
-						right: 0px;
-					}
-				}
-				img + img {
-					bottom: -30px;
-					right: 60px;
-					top: auto;
-				}
+		}
+		.who-is-behind-text {
+			font-size: 32px;
+			line-height: 36px;
+			position: relative;
+			z-index: 1;
+			@media(max-width: 768px) {
+				font-size: 20px;
+				line-height: 24px;
 			}
-			.who-is-behind-text {
-				font-size: 14px;
-				line-height: 20px;
+			a {
+				color: $color-gradient-a;
+				text-decoration: underline;
+				&:hover,
+				&:active,
+				&:focus {
+					color: $color-white;
+				}
 			}
 		}
 	}
-	.who-is-behind-text {
-		font-size: 32px;
-		line-height: 36px;
-		@media(max-width: 768px) {
-			font-size: 20px;
-			line-height: 24px;
-		}
-		a {
-			color: $color-gradient-a;
-			text-decoration: underline;
-			&:hover,
-			&:active,
-			&:focus {
-				color: $color-white;
-			}
-		}
-	}
+	
 }

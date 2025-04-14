@@ -1,0 +1,65 @@
+.why-sitch {
+	.memberships {
+		align-items: center;
+		display: flex;
+		gap: 40px;
+		justify-content: center;
+		margin: 0 auto;
+		max-width: 1024px;
+		padding: 0 0 80px 0;
+		@media(max-width: 768px) {
+			flex-direction: column;
+			gap: 20px;
+		}
+		.memberships-cell-overlay {
+			background: linear-gradient(to right, rgba($color-black-alt, 0) 85%, rgba($color-black-alt, 1) 95%);
+			height: 100%;
+			left: 0;
+			position: absolute;
+			top: 0;
+			width: 100%;
+			z-index: 0;
+		}
+		.memberships-cell {
+			background-image: linear-gradient(to right, rgba($color-gradient-a, .5) 0%, rgba($color-gradient-b, 0.5) 100%);
+			border-radius: 20px;
+			flex: 0 0 33%;
+			padding: 1px;
+			position: relative;
+			z-index: -1;
+			@media(max-width: 768px) {
+				flex: 0 0 100%;
+				width: 90%;
+			}
+			a {
+				align-items: center;
+				background-color: $color-black-alt;
+				border-radius: 20px;
+				color: $color-white;
+				cursor: pointer;
+				display: flex;
+				justify-content: space-between;
+				padding: 20px 40px 20px 20px;
+				position: relative;
+				z-index: 1;
+			}
+			span {
+				font-size: 36px;
+				line-height: 40px;
+				@media(max-width: 768px) {
+					font-size: 24px;
+					line-height: 28px;
+				}
+			}
+			strong {
+				font-size: 20px;
+				font-weight: 700;
+				line-height: 20px;
+				@media(max-width: 768px) {
+					font-size: 16px;
+					line-height: 20px;
+				}
+			}
+		}
+	}
+}
