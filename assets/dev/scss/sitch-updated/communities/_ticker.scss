@@ -1,17 +1,19 @@
 .communities {
 	.communities-ticker {
-		align-items: center;
 		background-color: $color-dark-grey;
-		display: flex;
-		flex-wrap: nowrap;
 		font-size: 26px;
-		justify-content: center;
 		line-height: 32px;
 		overflow: hidden;
 		padding: 5px 0;
 		@media(max-width: 768px) {
 			font-size: 20px;
 			line-height: 28px;
+		}
+		.communities-ticker-inner {
+			align-items: center;
+			display: flex;
+			flex-wrap: nowrap;
+			justify-content: center;
 		}
 		span {
 			align-items: center;

@@ -10,13 +10,15 @@
 		z-index: 0;
 	}
 	&__why-sitch {
-		.clients {
-			display: flex;
-			flex-wrap: nowrap;
+		.clients-ticker {
 			margin: 80px 0 0 0;
 			overflow: hidden;
 			position: relative;
 			z-index: 1;
+			.clients-ticker-inner {
+				display: flex;
+				flex-wrap: nowrap;
+			}
 			img {
 				height: 120px;
 				width: auto;
