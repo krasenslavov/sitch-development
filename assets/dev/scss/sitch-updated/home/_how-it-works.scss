@@ -2,10 +2,12 @@
 	.how-it-works {
 		border: 1px solid rgba($color-white, 0.45);
 		border-radius: 20px;
+		margin-bottom: 80px;
 		position: relative;
 		@media(max-width: 768px) {
 			border: 0;
 			border-radius: 0;
+			margin-bottom: 0;
 		}
 		.how-it-works-white-circle {
 			align-items: center;

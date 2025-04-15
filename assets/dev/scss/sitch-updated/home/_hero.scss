@@ -1,4 +1,12 @@
 .hero {
+	@keyframes scrollText {
+		0% {
+			transform: translateY(0%);
+		}
+		100% {
+			transform: translateY(-80%);
+		}
+	}
 	&__home {
 		padding: 160px 0 40px 0;
 		@media(max-width: 768px) {
@@ -15,11 +23,28 @@
 			}
 		}
 		.hero-above-heading {
-			margin: 0 auto;
-			max-width: 920px;
+			background-image: linear-gradient(to bottom, rgba($color-black-alt, 0.1) 10%, rgba($color-white, 0) 20%, rgba($color-white, 0) 80%, rgba($color-black-alt, 0.1) 90%);
+				border-radius: 50%;
+			font-size: 28px;
+			height: 100px;
+			line-height: 32px;
+			max-width: 800px;
+			overflow: hidden;
 			position: relative;
-			img {
-				max-width: 360px;
+			width: 100%;
+			@media(max-width: 768px) {
+				font-size: 20px;
+				line-height: 24px;
+			}
+			.hero-scroll-container {			
+				align-items: center;
+				animation: scrollText 20s linear infinite;
+				display: flex;
+				flex-direction: column;
+				gap: 10px;
+				justify-content: flex-start;
+				position: relative;
+				z-index: 0;
 			}
 		}
 		.hero-get-app-button {

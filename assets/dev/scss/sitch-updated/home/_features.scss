@@ -26,7 +26,6 @@
 			justify-content: space-between;
 			@media(max-width: 1024px) {
 				gap: 80px;
-				justify-content: center;
 				overflow: hidden;
 			}
 			.feature {
@@ -35,7 +34,14 @@
 					flex: 0 0 100%;
 				}
 				img {
+					cursor: pointer;
 					max-width: 240px;
+					pointer-events: none;
+				}
+				&.text-left {
+					@media(max-width: 768px) {
+						text-align: center;
+					}
 				}
 				&.text-center {
 					.feature-heading,
@@ -48,11 +54,18 @@
 					}
 				}
 				&.text-right {
+					@media(max-width: 768px) {
+						text-align: center;
+					}
 					.feature-heading,
 					.feature-text,
 					img {
 						float: right;
 						text-align: right;
+						@media(max-width: 768px) {
+							float: none;
+							text-align: center;
+						}
 					}
 				}
 				.feature-heading {
