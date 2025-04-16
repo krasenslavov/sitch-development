@@ -1,7 +1,1 @@
 sass.exe --watch .\assets\dev\scss\:.\assets\dist\css\ --style compressed
-
-payment - 375 (paid)
-home - 600 (sent)
-why sitch - 300
-communities - 300
-nominate your -self, single friend & faqs - 175

@@ -1,12 +1,4 @@
 .hero {
-	@keyframes scrollText {
-		0% {
-			transform: translateY(0%);
-		}
-		100% {
-			transform: translateY(-80%);
-		}
-	}
 	&__home {
 		padding: 160px 0 40px 0;
 		@media(max-width: 768px) {
@@ -23,28 +15,35 @@
 			}
 		}
 		.hero-above-heading {
+			align-items: center;
 			background-image: linear-gradient(to bottom, rgba($color-black-alt, 0.1) 10%, rgba($color-white, 0) 20%, rgba($color-white, 0) 80%, rgba($color-black-alt, 0.1) 90%);
 				border-radius: 50%;
+			display: flex;
 			font-size: 28px;
-			height: 100px;
-			line-height: 32px;
+			gap: 6px;
+			height: 120px;
+			justify-content: center;
+			line-height: 40px;
 			max-width: 800px;
 			overflow: hidden;
 			position: relative;
 			width: 100%;
 			@media(max-width: 768px) {
 				font-size: 20px;
+				height: 80px;
 				line-height: 24px;
 			}
 			.hero-scroll-container {			
-				align-items: center;
-				animation: scrollText 20s linear infinite;
+				align-items: flex-start;
 				display: flex;
 				flex-direction: column;
-				gap: 10px;
-				justify-content: flex-start;
+				justify-content: center;
 				position: relative;
+				top: 20px;
 				z-index: 0;
+				@media(max-width: 768px) {
+					top: 12px;
+				}
 			}
 		}
 		.hero-get-app-button {
