@@ -38,11 +38,11 @@
 				img {
 					border-bottom: 1px solid $color-black-alt;
 					border-top: 1px solid $color-black-alt;
-					height: 80px;
+					height: 75px;
 					left: 0;
 					position: absolute;
 					@media(max-width: 768px) {
-						height: 60px;
+						height: 55px;
 						margin-left: -120px;
 					}
 					+ div {

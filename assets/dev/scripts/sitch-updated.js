@@ -141,9 +141,95 @@ document.addEventListener("DOMContentLoaded", function () {
 		document.head.appendChild(style);
 	}
 
+	function initHomeHeroScroll() {
+		const scrollingText = document.querySelector(".hero-scroll-container");
+		const textItems = document.querySelectorAll(".hero-above-heading-text");
+
+		if (!scrollingText) {
+			return;
+		}
+
+		if (!textItems) {
+			return;
+		}
+
+		// Calculate the total height of all text items
+		let totalHeight = 0;
+
+		textItems.forEach((item) => {
+			totalHeight += item.offsetHeight;
+		});
+
+		// Clone the text items and append them to create a seamless loop
+		textItems.forEach((item) => {
+			const clone = item.cloneNode(true);
+			scrollingText.appendChild(clone);
+		});
+
+		// Set up the animation with delay using keyframes
+		// Adjust these values to control speed and delay:
+		const scrollDuration = 2; // seconds to scroll one item
+		const delayDuration = 3; // seconds to pause on each item
+		const totalItems = textItems.length;
+		const totalDuration = (scrollDuration + delayDuration) * totalItems;
+
+		// Calculate percentages for keyframes
+		let keyframes = "";
+		const itemHeight = totalHeight / totalItems;
+
+		for (let i = 0; i < totalItems; i++) {
+			// Calculate percentage points for this item
+			const startPosition = i * itemHeight;
+			const itemStartPercent = ((i * (scrollDuration + delayDuration)) / totalDuration) * 100;
+			const scrollEndPercent = itemStartPercent + (scrollDuration / totalDuration) * 100;
+			const delayEndPercent = scrollEndPercent + (delayDuration / totalDuration) * 100;
+
+			// Add keyframles for scroll movement and delay (pause)
+			keyframes += `
+					${itemStartPercent}% {
+						transform: translateY(-${startPosition}px);
+					}
+					${scrollEndPercent}% {
+						transform: translateY(-${startPosition + itemHeight}px);
+					}
+					${delayEndPercent}% {
+						transform: translateY(-${startPosition + itemHeight}px);
+					}
+				`;
+		}
+
+		// Create keyframe animation using a style element
+		const style = document.createElement("style");
+
+		style.textContent = `
+				@keyframes smoothScrollWithDelay {
+					0% {
+						transform: translateY(0);
+					}
+					${keyframes}
+					100% {
+						transform: translateY(-${totalHeight}px);
+					}
+				}
+				.hero-scroll-container {
+					animation: smoothScrollWithDelay 45s linear infinite;
+				}
+			`;
+
+		document.head.appendChild(style);
+
+		// Function to reset animation if needed
+		function resetAnimation() {
+			scrollingText.style.animation = "none";
+			scrollingText.offsetHeight; // Trigger reflow
+			scrollingText.style.animation = `smoothScrollWithDelay 45s linear infinite`;
+		}
+	}
+
 	// Initialize both tickers
 	initTicker(".communities-ticker-inner", 1);
 	initTicker(".clients-ticker-inner", 1);
 	initTestimonialScroll(".testimonial-container");
 	initTestimonialScroll(".features-container");
+	initHomeHeroScroll();
 });
