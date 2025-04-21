@@ -16,6 +16,7 @@
 			background-color: #f2f0e4;
 			display: flex;
 			overflow: hidden;
+			position: relative;
 			.members-text {
 				align-items: flex-end;
 				color: $color-black;
@@ -26,7 +27,6 @@
 				justify-content: center;
 				line-height: 36px;
 				padding: 40px;
-				position: relative;
 				@media(max-width: 1024px) {
 					flex: 0 0 100%;
 					padding: 10px;
