@@ -1,0 +1,60 @@
+.floating-bar {
+	align-items: center;
+	background-color: #141414;
+	bottom: 0;
+	display: flex;
+	justify-content: space-between;
+	left: 0;
+	padding: 20px;
+	position: fixed;
+	right: 0;
+	width: 100%;
+	@media(max-width: 768px) {
+		flex-direction: column;
+		max-height: 170px;
+	}
+	.container {
+		position: relative;
+	}
+	.floating-bar-text {
+		font-size: 24px;
+		gap: 30px;
+		line-height: 32px;
+		max-width: 640px;
+		text-align: right;
+		@media(max-width: 1200px) {
+			max-width: 50%;
+		}
+		@media(max-width: 768px) {
+			font-size: 16px;
+			line-height: 22px;
+			max-width: 100%;
+			text-align: center;
+		}
+
+		br {
+			@media(max-width: 768px) {
+				display: none;
+			}
+		}
+		u {
+			color: $color-gradient-a;
+		}
+	}
+	.floating-bar-image {
+		text-align: right;
+		@media(max-width: 768px) {
+			text-align: center;
+		}
+		img {
+			height: 140px;
+			position: absolute;
+			right: -10px;
+			top: -40px;
+			@media(max-width: 768px) {
+				height: 120px;
+				position: static;
+			}
+		}
+	}
+}
