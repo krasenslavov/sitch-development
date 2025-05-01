@@ -1,0 +1,32 @@
+.header {
+	&__clouds {
+		background: url(../img/sitch-callus/bg-header-alt.webp) no-repeat bottom center;
+		background-size: cover;
+		position: relative;
+		.container__callus {
+			background: url(../img/sitch-callus/sitch-callus-phone.webp) no-repeat left 240px;
+			background-size: 25%;
+			position: relative;
+			z-index: 1;
+			@media(max-width: 1200px) {
+				background-size: 33%;
+			}
+			@media(max-width: 1024px) {
+				background-position: left 480px;
+			}
+			@media(max-width: 768px) {
+				background-position: left 320px;
+			}
+		}
+	}
+}
+.header-overlay {
+	background: rgba($color-black-alt, 0.35);
+	height: 100%;
+	left: 0;
+	pointer-events: none;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: 0;
+}

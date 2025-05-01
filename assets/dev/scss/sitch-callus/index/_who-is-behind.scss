@@ -1,0 +1,95 @@
+.footer {
+	&__call-us {
+		padding: 80px 0 0 0;
+		.who-is-behind-heading {
+			font-size: 48px;
+			line-height: 44px;
+			position: relative;
+			z-index: 1;
+			@media(max-width: 768px) {
+				font-size: 32px;
+				line-height: 36px;
+			}
+			@media(max-width: 540px) {
+				margin-left: 10px;
+				text-align: left !important;
+			}
+		}
+		.who-is-behind-sub-heading {
+			font-size: 64px;
+			line-height: 52px;
+			margin: 20px 0;
+			position: relative;
+			z-index: 1;
+			@media(max-width: 768px) {
+				font-size: 44px;
+				line-height: 52px;
+				margin: 10px;
+			}
+			@media(max-width: 540px) {
+				text-align: left !important;
+			}
+		}
+		.who-is-behind-cards {
+			align-items: center;
+			display: flex;
+			gap: 60px;
+			justify-content: center;
+			margin: 0 auto;
+			max-width: 360px;
+			padding: 80px 0 40px 0;
+			@media(max-width: 768px) {	
+				flex-direction: column;
+				gap: 80px;
+				padding: 40px 0;
+			}
+			.who-is-behind-card {
+				background-color: rgba($color-black, 0.45);
+				border-radius: 20px;
+				display: flex;
+				flex: 0 0 540px;
+				font-size: 18px;
+				min-height: 220px;
+				padding: 30px;
+				position: relative;
+				@media(max-width: 1024px) {
+					flex: 0 0 360px;
+					min-height: 300px;
+				}
+				@media(max-width: 768px) {
+					flex: 0 0 100%;
+					min-height: auto;
+				}
+				a {
+					font-size: 18px;
+					line-height: 24px;
+				}
+				img {
+					height: 80px;
+					position: absolute;
+					right: -40px;
+					top: -40px;
+					width: 80px;
+				}
+				&:first-of-type {
+					img {
+						left: -40px;
+						@media(max-width: 768px) {
+							bottom: -60px;
+							left: 0px;
+							right: auto;
+							top: auto;
+						}
+					}
+				}
+				&:last-of-type {
+					img {
+						@media(max-width: 768px) {
+							right: 0px;
+						}
+					}
+				}
+			}
+		}
+	}
+}

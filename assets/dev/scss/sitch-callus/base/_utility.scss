@@ -1,0 +1,116 @@
+.custom-text {
+	background: linear-gradient(90deg, $color-gradient-a 0%, $color-gradient-b 100%);
+	background-clip: text;	
+	font-size: 12px;
+	-webkit-text-fill-color: transparent;
+}
+
+.custom-badge {
+	background: linear-gradient(90deg, $color-gradient-a 0%, $color-gradient-b 100%);
+	border-radius: 24px;
+	color: $color-black;
+	font-size: 11px;
+	line-height: 18px;
+	padding: 3px 12px;
+	text-transform: uppercase;
+}
+
+.custom-yellow-button {
+	background-color: $color-gradient-a;
+	border-radius: 20px;
+	color: $color-black;
+	display: inline-block;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 24px;
+	margin: 30px 0;
+	padding: 10px 40px;
+	text-decoration: none;
+	transition: background-color 400ms ease-in-out;
+	&:hover,
+	&:focus,
+	&:active {
+		background-color: $color-gradient-b;
+		color: $color-black !important;
+	}
+}
+
+.custom-wave-active {
+	background-image: radial-gradient(circle at 10px 20px, $color-gradient-a 10px, transparent 10px);
+	background-repeat: repeat-x;
+	background-size: 20px 100%;
+	height: 20px;
+	pointer-events: none;
+	position: absolute;
+	width: 100%;
+	&.top {
+		left: 0;
+		top: -15px;
+	}
+	&.right {
+		background-image: radial-gradient(circle at 20px 10px, $color-gradient-a 10px, transparent 10px);
+		background-repeat: repeat-y;
+		background-size: 100% 20px;
+		height: 100%;
+		right: -15px;
+		top: 0;
+		transform: rotateY(180deg);
+		width: 20px;
+	}
+	&.bottom {
+		bottom: -15px;
+		left: 0;
+		transform: rotateX(180deg);				
+	}
+	&.left {
+		background-image: radial-gradient(circle at 20px 10px, $color-gradient-a 10px, transparent 10px);
+		background-repeat: repeat-y;
+		background-size: 100% 20px;
+		height: 100%;
+		left: -15px;
+		top: 0;
+		width: 20px;
+	}
+}
+
+.custom-wave {
+	background-image: radial-gradient(circle at 10px 20px, $color-white 10px, transparent 10px);
+	background-repeat: repeat-x;
+	background-size: 20px 100%;
+	height: 20px;
+	pointer-events: none;
+	position: absolute;
+	width: 100%;
+	&.top {
+		left: 0;
+		top: -15px;
+	}
+	&.right {
+		background-image: radial-gradient(circle at 20px 10px, $color-white 10px, transparent 10px);
+		background-repeat: repeat-y;
+		background-size: 100% 20px;
+		height: 100%;
+		right: -15px;
+		top: 0;
+		transform: rotateY(180deg);
+		width: 20px;
+	}
+	&.bottom {
+		bottom: -15px;
+		left: 0;
+		transform: rotateX(180deg);				
+	}
+	&.left {
+		background-image: radial-gradient(circle at 20px 10px, $color-white 10px, transparent 10px);
+		background-repeat: repeat-y;
+		background-size: 100% 20px;
+		height: 100%;
+		left: -15px;
+		top: 0;
+		width: 20px;
+	}
+}
+
+.text-right {
+	text-align: right;
+}
