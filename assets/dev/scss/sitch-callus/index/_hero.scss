@@ -43,6 +43,10 @@
 		.hero-steps-container {
 			margin: 0 auto;
 			max-width: 430px;
+			.custom-yellow-button {
+				position: relative;
+				z-index: 10;
+			}
 		}
 		.hero-steps-list {
 			display: flex;
