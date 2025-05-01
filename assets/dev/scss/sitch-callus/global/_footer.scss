@@ -1,0 +1,111 @@
+footer {
+	min-height: 1024px;
+	position: relative;
+	@media(max-width: 1200px) {
+		min-height: 768px;
+	}
+	@media(max-width: 768px) {
+		min-height: 540px;
+	}
+	@media(max-width: 540px) {
+		min-height: 360px;
+	}
+	.footer-logo {
+		img {
+			height: 132px;
+			@media(max-width: 1024px) {
+				height: 72px;
+			}
+			@media(max-width: 768px) {
+				height: 52px;
+			}
+			@media(max-width: 540px) {
+				height: 32px;
+			}
+		}
+	}
+	.footer-shape {
+		svg {
+			height: 100%;
+			left: 0;
+			overflow: visible;
+			position: absolute;
+			right: 0;
+			width: 100%;
+			z-index: 0;
+		}
+		text {
+			fill: $color-white;
+			font-size: 14.3%;
+		}
+	}
+	.footer-content {
+		align-items: center;
+		display: flex;
+		height: 100%;
+		justify-content: center;
+		position: absolute;
+		top: 0;
+		width: 100%;
+		z-index: 1;
+		nav {
+			align-items: center;
+			display: flex;
+			gap: 40px;
+			justify-content: center;
+			margin: 40px 0;
+			@media(max-width: 768px) {
+				margin: 10px 0;
+			}
+		}
+		p {
+			color: rgba($color-white, 0.65);
+			font-size: 16px;
+			line-height: 24px;
+			a {
+				color: rgba($color-white, 0.65);
+				&:hover,
+				&:active,
+				&:focus {
+					color: $color-white;
+				}
+			}
+		}
+	}
+}
+
+.footer {
+	position: relative;
+	&__clouds {
+		background: url(../img/sitch-callus/bg-header-alt.webp) no-repeat top center;
+		background-size: cover;
+	}
+	.footer-overlay {
+		background: rgba($color-black-alt, 0.35);
+		height: 100%;
+		left: 0;
+		pointer-events: none;
+		position: absolute;
+		top: 0;
+		width: 100%;
+		z-index: 0;
+	}
+	.footer-heading {
+		color: $color-white;
+		font-size: 40px;
+		line-height: 46px;
+		position: absolute;
+		top: 120px;
+		width: 100%;
+		z-index: 9;
+		@media(max-width: 1200px) {
+			padding-top: 120px;
+			position: relative;
+			top: auto;
+		}
+		@media(max-width: 768px) {
+			font-size: 24px;
+			line-height: 32px;
+		}
+	}
+}

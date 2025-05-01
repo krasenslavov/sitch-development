@@ -1,0 +1,61 @@
+@font-face {
+	font-display: swap;
+	font-family: 'PPMoriRegular';
+	font-style: 'normal';
+	font-weight: 400;
+	src: url('../fonts/PPMoriRegular.woff2') format('woff2');
+}
+
+@font-face {
+	font-display: swap;
+	font-family: 'SeriouslyNostalgicFnRegular';
+	font-style: 'normal';
+	font-weight: 400;
+	src: url('../fonts/SeriouslyNostalgicFn-Regular.woff2') format('woff2');
+}
+
+@font-face {
+	font-display: swap;
+	font-family: 'BelmonteBallpointCursive';
+	font-style: 'normal';
+	font-weight: 400;
+	src: url('../fonts/BelmonteBallpointCursive.woff2') format('woff2');
+}
+
+@font-face {
+	font-display: swap;
+	font-family: 'Temeraire';
+	font-style: 'normal';
+	font-weight: 400;
+	src: url('../fonts/Temeraire.woff2') format('woff2');
+}
+
+.font-pp-mori-regular {
+	font-family: PPMoriRegular, system-ui;
+}
+
+.font-seriously-nostalgic-fn-regular {
+	font-family: SeriouslyNostalgicFnRegular, system-ui;
+}
+
+.font-belmonte-ballpoint-cursive {
+	font-family: BelmonteBallpointCursive, system-ui;
+}
+
+.font-temeraire {
+	font-family: Temeraire, system-ui;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	br {
+		@media (max-width: 768px) {
+			display: none;
+		}
+	}
+}
+
+body, p, input, button, textarea {
+	font-family: PPMoriRegular, system-ui;
+	font-size: 18px;
+	line-height: 26px;
+}
