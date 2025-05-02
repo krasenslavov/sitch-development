@@ -1,6 +1,9 @@
 .footer {
 	&__call-us {
-		padding: 80px 0 0 0;
+		padding-top: 80px;
+		@media(max-width: 768px) {
+			padding-top: 40px;
+		}
 		.who-is-behind-heading {
 			font-size: 48px;
 			line-height: 44px;
@@ -24,9 +27,10 @@
 			@media(max-width: 768px) {
 				font-size: 44px;
 				line-height: 52px;
-				margin: 10px;
+				margin: 5px;
 			}
 			@media(max-width: 540px) {
+				margin: 0 0 0 5px;
 				text-align: left !important;
 			}
 		}
@@ -41,7 +45,7 @@
 			@media(max-width: 768px) {	
 				flex-direction: column;
 				gap: 80px;
-				padding: 40px 0;
+				padding: 20px 0;
 			}
 			.who-is-behind-card {
 				background-color: rgba($color-black, 0.45);
@@ -59,6 +63,7 @@
 				@media(max-width: 768px) {
 					flex: 0 0 100%;
 					min-height: auto;
+					padding: 20px;
 				}
 				a {
 					font-size: 18px;
@@ -86,6 +91,7 @@
 					img {
 						@media(max-width: 768px) {
 							right: 0px;
+							top: -60px;
 						}
 					}
 				}

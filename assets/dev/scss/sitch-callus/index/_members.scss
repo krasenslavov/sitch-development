@@ -24,15 +24,20 @@
 					font-size: 20px;
 					line-height: 24px;
 				}
+				a {
+					margin-bottom: 0;
+				}
 				img {
 					margin: 40px 0;
 					width: 100%;
 					@media(max-width: 1024px) {
-						height: 100px;
+						height: 90px;
+						margin-left: -220px;
 						width: unset;
 					}
 					@media(max-width: 540px) {
-						height: 80px;
+						height: 70px;
+						margin-left: -160px;
 						width: unset;
 					}
 				}

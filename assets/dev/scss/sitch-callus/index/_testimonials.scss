@@ -16,7 +16,7 @@
 				img {
 					height: 125px;
 					@media(max-width: 768px) {
-						height: 50px;
+						height: 65px;
 					}
 				}
 			}
@@ -27,8 +27,9 @@
 				height: 480px;
 				margin-left: calc((1200px + 80px - 100vw) / 2);
 				width: 100vw;
-				@media (max-width: 1200px) {
-					margin: 80px 0 0 0;
+				@media (max-width: 1024px) {
+					height: auto;
+					margin: 0;
 				}
 				.testimony {
 					background-color: $color-white;
@@ -43,8 +44,9 @@
 					padding: 20px;
 					position: relative;
 					transform: rotate(-6deg);
-					@media (max-width: 1200px) {
+					@media (max-width: 1024px) {
 						flex: 0 0 320px;
+						margin: 20px;
 					}
 					&.testimony-active {
 						border: 8px solid $color-gradient-a;
@@ -53,6 +55,9 @@
 						position: relative;
 						top: -80px;
 						transform: rotate(6deg);
+						@media (max-width: 1024px) {
+							top: 0;
+						}
 					}
 					.testimony-text {
 						font-family: SeriouslyNostalgicFnRegular, system-ui;
