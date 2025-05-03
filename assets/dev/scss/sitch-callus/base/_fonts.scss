@@ -30,6 +30,14 @@
 	src: url('../fonts/Temeraire.woff2') format('woff2');
 }
 
+@font-face {
+	font-display: swap;
+	font-family: 'SyneBold';
+	font-style: 'normal';
+	font-weight: 700;
+	src: url('../fonts/SyneBold.woff2') format('woff2');
+}
+
 .font-pp-mori-regular {
 	font-family: PPMoriRegular, system-ui;
 }
@@ -44,6 +52,10 @@
 
 .font-temeraire {
 	font-family: Temeraire, system-ui;
+}
+
+.font-syne {
+	font-family: SyneBold, system-ui;
 }
 
 h1, h2, h3, h4, h5, h6 {
